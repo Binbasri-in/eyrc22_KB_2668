@@ -17,11 +17,11 @@
 *****************************************************************************************
 '''
 
-# Team ID:			[ Team-ID ]
-# Author List:		[ Names of team members worked on this file separated by Comma: Name1, Name2, ... ]
-# Filename:			percepStack.py
-# Functions:		
-# 					[ Comma separated list of functions in this file ]
+# Team ID:		[ eYRC#KB#2668 ]
+# Author List:		[ Sai Harshit B, Pranesh Kannan, S Guru Prasad, Mohammed Ali Alsakkaf ]
+# Filename:		KB_2668.py
+# Functions:
+# 			[ image_processing, img_clbck, depth_clbck, main ]
 
 
 ####################### IMPORT MODULES #######################
@@ -39,7 +39,6 @@ import numpy as np
 pub_rgb = rospy.Publisher('/center_rgb', String, queue_size = 1)
 pub_depth = rospy.Publisher('/center_depth', String, queue_size = 1)
 pose_g = []
-counter = 0
 
 ################# ADD UTILITY FUNCTIONS HERE #################
 
@@ -60,7 +59,7 @@ def img_clbck(img_msg):
     -----
     img_msg: Callback message.
     '''
-    global pub_rgb, counter #, add global variable if any
+    global pub_rgb #, add global variable if any
 
     ############################### Add your code here #######################################
     # Convert the image to cv2 format
@@ -72,9 +71,8 @@ def img_clbck(img_msg):
 
     # check if the image is not corrupted
     if image is None:
-        counter += 1
         return
-    rospy.loginfo(f"image shape: {image.shape}")
+    #rospy.loginfo(f"image shape: {image.shape}")
     
     ##########################################################################################
     pose = image_processing(image)
@@ -83,7 +81,7 @@ def img_clbck(img_msg):
     global pose_g
     pose_g = pose
     pub_rgb.publish(str(pose))
-    counter += 1
+
 
 def depth_clbck(depth_msg):
     '''
@@ -116,7 +114,7 @@ def depth_clbck(depth_msg):
         x = c[0] * 480 // 720
         y = c[1] * 848 // 1280
         depth_val.append(depth_img[x][y]/1000)
-    rospy.loginfo(f"depth shape: {depth_img.shape}")
+    #rospy.loginfo(f"depth shape: {depth_img.shape}")
     rospy.loginfo(f"depth: {depth_val}")
     ##########################################################################################
     pub_depth.publish(str(depth_val))
@@ -229,30 +227,24 @@ def main():
 
     rospy.init_node("percepStack", anonymous=True)
     # define a rate
-    rate = rospy.Rate(4)
+    #rate = rospy.Rate(4)
     
     # start looping
-    while not rospy.is_shutdown():
-        # data 1
-        rospy.Subscriber("/device_0/sensor_1/Color_0/image/data_1", Image, img_clbck)
-        rospy.Subscriber("/device_0/sensor_0/Depth_0/image/data_1", Image, depth_clbck)
-        rospy.sleep(0.5)
+    #while not rospy.is_shutdown():
+    # data 1
+    rospy.Subscriber("/device_0/sensor_1/Color_0/image/data_1", Image, img_clbck)
+    rospy.Subscriber("/device_0/sensor_0/Depth_0/image/data_1", Image, depth_clbck)
 
-        # data 2
-        rospy.Subscriber("/device_0/sensor_1/Color_0/image/data_2", Image, img_clbck)
-        rospy.Subscriber("/device_0/sensor_0/Depth_0/image/data_2", Image, depth_clbck)
-        rospy.sleep(0.5)
+    # data 2
+    rospy.Subscriber("/device_0/sensor_1/Color_0/image/data_2", Image, img_clbck)
+    rospy.Subscriber("/device_0/sensor_0/Depth_0/image/data_2", Image, depth_clbck)
 
-        # data 3
-        rospy.Subscriber("/device_0/sensor_1/Color_0/image/data_3", Image, img_clbck)
-        rospy.Subscriber("/device_0/sensor_0/Depth_0/image/data_3", Image, depth_clbck)
-        rospy.sleep(0.5)
-
-
-
-
+    # data 3
+    rospy.Subscriber("/device_0/sensor_1/Color_0/image/data_3", Image, img_clbck)
+    rospy.Subscriber("/device_0/sensor_0/Depth_0/image/data_3", Image, depth_clbck)
 
     ####################################################################################################
+    rospy.spin()
 
 if __name__ == '__main__':
     try:
