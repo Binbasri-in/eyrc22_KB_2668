@@ -60,7 +60,6 @@ def img_clbck(img_msg):
     img_msg: Callback message.
     '''
     global pub_rgb  # , add global variable if any
-
     ############################### Add your code here #######################################
     # Convert the image to cv2 format
     bridge = CvBridge()
@@ -73,7 +72,6 @@ def img_clbck(img_msg):
     if image is None:
         return
     #rospy.loginfo(f"image shape: {image.shape}")
-
     ##########################################################################################
     pose = image_processing(image)
 
@@ -228,7 +226,6 @@ def main():
     rospy.init_node("percepStack", anonymous=True)
     # define a rate
     #rate = rospy.Rate(4)
-
     # start looping
     # while not rospy.is_shutdown():
     # data 1
@@ -251,7 +248,6 @@ def main():
 
     ####################################################################################################
     rospy.spin()
-
 
 if __name__ == '__main__':
     try:
