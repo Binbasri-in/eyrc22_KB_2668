@@ -1,3 +1,5 @@
+http://docs.ros.org/en/melodic/api/sensor_msgs/html/msg/CameraInfo.html
+
 header: 
   seq: 13
   stamp: 
