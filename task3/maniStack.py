@@ -87,27 +87,40 @@ def main():
     pose_red = geometry_msgs.msg.Pose()
     pose_yellow= geometry_msgs.msg.Pose()
     
+    flag = 0
     while not rospy.is_shutdown():
         #sequence of actions
         ur5.go_to_predefined_pose(ur5.arm,"face_tree")
         rospy.sleep(1)
-        if cam.two_found == 0:
+        if flag == 0:
             cam.start_subscribers()
             rospy.sleep(1)
-
-        if cam.two_found == 2:
-            cam.broadcast_tf()
-            rospy.sleep(1)
-        
-         try:
+            listner = tf.TransformListener()
+            flag = 1
+            
+        try:
             (trans_red,rot_red) = listner.lookupTransform('/ebot_base', '/fruit_red', rospy.Time(0))
-            (trans_yellow,rot_yellow)= listner.lookupTransform('/ebot_base', '/fruit_yellow', rospy.Time(0))
+            #(trans_yellow,rot_yellow)= listner.lookupTransform('/ebot_base', '/fruit_yellow', rospy.Time(0))
         except (tf.LookupException, tf.ConnectivityException, tf.ExtrapolationException):
             continue
 
-        ur5.go_to_pose()
-        ur5.go_to_predefined_pose(ur5.arm,"")
-        break
+
+        if len(trans_red) != 0:
+            # set the new pose
+            pose_red.position.x = trans_red[0]
+            pose_red.position.y = trans_red[1]
+            pose_red.position.z = trans_red[2]
+            pose_red.orientation.x = rot_red[0]
+            pose_red.orientation.y = rot_red[1]
+            pose_red.orientation.z = rot_red[2]
+            pose_red.orientation.w = rot_red[3]
+            # make the robot go to the pose rest position
+            ur5.go_to_predefined_pose(ur5.arm,"allZeros")
+            rospy.sleep(1)
+            ur5.go_to_pose(pose_red)
+            rospy.sleep(1)
+            ur5.go_to_predefined_pose(ur5.arm,"allZeros")
+            rospy.sleep(1)
     del ur5
 
 #----------------------------------------------------------------------------------------------------
