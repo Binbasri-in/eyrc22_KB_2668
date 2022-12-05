@@ -7,7 +7,7 @@ import moveit_msgs.msg
 import geometry_msgs.msg
 import actionlib
 import math
-
+import percepStack
 
 class Ur5Moveit:
 
@@ -83,7 +83,7 @@ def main():
     ur5 = Ur5Moveit()
 
     ur5_pose_1 = geometry_msgs.msg.Pose()
-    
+    cam=1
     while not rospy.is_shutdown():
         #sequence is defined here.
         print('This block needs the sequence')
