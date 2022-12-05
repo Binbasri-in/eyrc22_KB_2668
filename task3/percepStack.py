@@ -15,8 +15,6 @@ import math
 class PerceptionNode:
     # constructor
     def __init__(self):
-        # initialize the node
-        rospy.init_node('perception_node', anonymous=True)
         # initialize the publisher
         self.pub_tf = tf.TransformBroadcaster()
         # initialize the bridge
