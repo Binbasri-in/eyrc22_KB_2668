@@ -6,6 +6,7 @@ import moveit_commander
 import moveit_msgs.msg
 import geometry_msgs.msg
 import actionlib
+import tf
 import math
 import percepStack
 
@@ -60,8 +61,8 @@ class Ur5Moveit:
     def go_to_predefined_pose(self, group, arg_pose_name):
 
         rospy.loginfo('\033[94m' + "Going to Pose: {}".format(arg_pose_name) + '\033[0m')
-        self.group.set_named_target(arg_pose_name)
-        plan = self.group.plan()
+        group.set_named_target(arg_pose_name)
+        plan = group.plan()
         goal = moveit_msgs.msg.ExecuteTrajectoryGoal()
         try:
             goal.trajectory = plan[1]
@@ -90,7 +91,7 @@ def main():
     flag = 0
     while not rospy.is_shutdown():
         #sequence of actions
-        ur5.go_to_predefined_pose(ur5.arm,"face_tree")
+        ur5.go_to_predefined_pose(ur5.arm,"look")
         rospy.sleep(1)
         if flag == 0:
             cam.start_subscribers()
@@ -115,11 +116,9 @@ def main():
             pose_red.orientation.z = rot_red[2]
             pose_red.orientation.w = rot_red[3]
             # make the robot go to the pose rest position
-            ur5.go_to_predefined_pose(ur5.arm,"allZeros")
-            rospy.sleep(1)
             ur5.go_to_pose(pose_red)
             rospy.sleep(1)
-            ur5.go_to_predefined_pose(ur5.arm,"allZeros")
+            ur5.go_to_predefined_pose(ur5.arm,"red_side")
             rospy.sleep(1)
     del ur5
 
