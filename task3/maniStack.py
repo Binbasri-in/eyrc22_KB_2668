@@ -16,14 +16,14 @@ class Ur5Moveit:
 
         rospy.init_node('task3', anonymous=True)
 
-
         self._commander = moveit_commander.roscpp_initialize(sys.argv)
         self._robot = moveit_commander.RobotCommander()
         self._scene = moveit_commander.PlanningSceneInterface()
+
         self.arm = moveit_commander.MoveGroupCommander("arm")
         self.gripper = moveit_commander.MoveGroupCommander("gripper")
-        self._display_trajectory_publisher = rospy.Publisher('/move_group/display_planned_path', moveit_msgs.msg.DisplayTrajectory, queue_size=5)
 
+        self._display_trajectory_publisher = rospy.Publisher('/move_group/display_planned_path', moveit_msgs.msg.DisplayTrajectory, queue_size=5)
         self._exectute_trajectory_client = actionlib.SimpleActionClient('execute_trajectory', moveit_msgs.msg.ExecuteTrajectoryAction)
         self._exectute_trajectory_client.wait_for_server()
 
@@ -40,15 +40,11 @@ class Ur5Moveit:
 #Function to go to pose obtained by camera.
     def go_to_pose(self, arg_pose):
 
-        pose_values = self.arm.get_current_pose().pose
-        
+        pose_values = self.arm.get_current_pose().pose     
         self.arm.set_pose_target(arg_pose)
         flag_plan = self.arm.go(wait=True)  # wait=False for Async Move
-
         pose_values = self.arm.get_current_pose().pose
-        
         list_joint_values = self.arm.get_current_joint_values()
-        
         rospy.loginfo(list_joint_values)
 
         if (flag_plan == True):
@@ -58,8 +54,23 @@ class Ur5Moveit:
 
         return flag_plan
 #--------------------------------------------------------------------------------------------------
-#Function to go to a predefined pose with arm planning group
+#Function to go to a predefined pose 
 
+
+    def go_to_predefined_pose(self, group, arg_pose_name):
+
+        rospy.loginfo('\033[94m' + "Going to Pose: {}".format(arg_pose_name) + '\033[0m')
+        self.group.set_named_target(arg_pose_name)
+        plan = self.group.plan()
+        goal = moveit_msgs.msg.ExecuteTrajectoryGoal()
+        try:
+            goal.trajectory = plan[1]
+        except:
+           goal.trajectory = plan
+        self._exectute_trajectory_client.send_goal(goal)
+        self._exectute_trajectory_client.wait_for_result()
+        rospy.loginfo('\033[94m' + "Now at Pose: {}".format(arg_pose_name) + '\033[0m')
+    
 #---------------------------------- Destructor-----------------------------------------------------
     def __del__(self):
         moveit_commander.roscpp_shutdown()
