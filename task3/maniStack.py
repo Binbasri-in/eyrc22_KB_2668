@@ -100,8 +100,8 @@ def main():
             rospy.sleep(1)
         
          try:
-            (x, y, z), (x_o, y_o, z_o, w) = listner.lookupTransform('/ebot_base', '/fruit_red', rospy.Time(0))
-            pose_yellow = listner.lookupTransform('/ebot_base', '/fruit_yellow', rospy.Time(0))
+            (trans_red,rot_red) = listner.lookupTransform('/ebot_base', '/fruit_red', rospy.Time(0))
+            (trans_yellow,rot_yellow)= listner.lookupTransform('/ebot_base', '/fruit_yellow', rospy.Time(0))
         except (tf.LookupException, tf.ConnectivityException, tf.ExtrapolationException):
             continue
 
