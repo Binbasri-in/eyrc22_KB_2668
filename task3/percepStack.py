@@ -90,7 +90,7 @@ class PerceptionNode:
 
 
     # helping functions for image processing
-    def _reduce_noise(img):
+    def _reduce_noise(self, img):
         # clean up
         kernel = cv2.getStructuringElement(cv2.MORPH_ELLIPSE, (15, 15))
         mask_red_closed = cv2.morphologyEx(img, cv2.MORPH_CLOSE, kernel)
@@ -99,7 +99,7 @@ class PerceptionNode:
         return mask_red_closed_then_opened
 
     # function to get the centroid of the image
-    def _get_centroid(img):
+    def _get_centroid(self, img):
         M = cv2.moments(img)
         if M['m00'] != 0:
             cx = int(M['m10'] / M['m00'])
@@ -112,7 +112,7 @@ class PerceptionNode:
 
     # TODO: add a condition to check the area is not too small
 
-    def _get_biggest_contour(img):
+    def _get_biggest_contour(self, img):
         # get the contours
         contours, hierarchy = cv2.findContours(
             img, cv2.RETR_TREE, cv2.CHAIN_APPROX_SIMPLE)
