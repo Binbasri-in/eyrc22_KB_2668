@@ -98,7 +98,13 @@ def main():
         if cam.two_found == 2:
             cam.broadcast_tf()
             rospy.sleep(1)
-            
+        
+         try:
+            (x, y, z), (x_o, y_o, z_o, w) = listner.lookupTransform('/ebot_base', '/fruit_red', rospy.Time(0))
+            pose_yellow = listner.lookupTransform('/ebot_base', '/fruit_yellow', rospy.Time(0))
+        except (tf.LookupException, tf.ConnectivityException, tf.ExtrapolationException):
+            continue
+
         ur5.go_to_pose()
         ur5.go_to_predefined_pose(ur5.arm,"")
         break
