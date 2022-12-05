@@ -91,8 +91,14 @@ def main():
         #sequence of actions
         ur5.go_to_predefined_pose(ur5.arm,"face_tree")
         rospy.sleep(1)
-        cam.start_subscribers()
-        rospy.sleep(1)
+        if cam.two_found == 0:
+            cam.start_subscribers()
+            rospy.sleep(1)
+
+        if cam.two_found == 2:
+            cam.broadcast_tf()
+            rospy.sleep(1)
+            
         ur5.go_to_pose()
         ur5.go_to_predefined_pose(ur5.arm,"")
         break
