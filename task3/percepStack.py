@@ -210,3 +210,15 @@ class PerceptionNode:
         z = depth_val
         return x, y, z
         
+'''
+[ERROR] [1670259484.121675, 7.814000]: bad callback: <bound method PerceptionNode.img_clbck of <percepStack.PerceptionNode object at 0x7f401036bc10>>
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 750, in _invoke_callback
+    cb(msg)
+  File "/home/hashirama_b/catkin_ws/src/eyrc-2022_krishibot/scripts/percepStack.py", line 52, in img_clbck
+    self.two_found = self.image_processing(image)
+  File "/home/hashirama_b/catkin_ws/src/eyrc-2022_krishibot/scripts/percepStack.py", line 147, in image_processing
+    mask_clean = self._reduce_noise(mask_red)
+TypeError: _reduce_noise() takes 1 positional argument but 2 were given
+
+'''
