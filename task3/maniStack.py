@@ -81,12 +81,20 @@ class Ur5Moveit:
 def main():
 
     ur5 = Ur5Moveit()
+    cam=percepStack.PerceptionNode()
 
-    ur5_pose_1 = geometry_msgs.msg.Pose()
-    cam=1
+    
+    pose_red = geometry_msgs.msg.Pose()
+    pose_yellow= geometry_msgs.msg.Pose()
+    
     while not rospy.is_shutdown():
-        #sequence is defined here.
-        print('This block needs the sequence')
+        #sequence of actions
+        ur5.go_to_predefined_pose(ur5.arm,"face_tree")
+        rospy.sleep(1)
+        cam.start_subscribers()
+        rospy.sleep(1)
+        ur5.go_to_pose()
+        ur5.go_to_predefined_pose(ur5.arm,"")
         break
     del ur5
 
