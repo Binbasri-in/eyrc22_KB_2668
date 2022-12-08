@@ -48,6 +48,7 @@ red_object = ()
 yellow_object = ()
 orent_g = ()
 br = tf.TransformBroadcaster()
+count = 0
 
 
 ################# ADD UTILITY FUNCTIONS HERE #################
@@ -110,18 +111,22 @@ def img_clbck(img_msg):
 
     ############################### Add your code here #######################################
     ################### broadcast the transform
-    if is_two_found == 3:
-        br.sendTransform(red_object,
-                         orent_g,
-                         rospy.Time.now(),
-                         "fruit_red",
-                         "ebot_base")
-        br.sendTransform(yellow_object,
-                         orent_g,
-                         rospy.Time.now(),
-                         "fruit_yellow",
-                         "ebot_base")
-        rospy.loginfo("transform published")
+    try:
+        if is_two_found == 3:
+            br.sendTransform(red_object,
+                            orent_g,
+                            rospy.Time.now(),
+                            "fruit_red",
+                            "ebot_base")
+            br.sendTransform(yellow_object,
+                            orent_g,
+                            rospy.Time.now(),
+                            "fruit_yellow",
+                            "ebot_base")
+            rospy.loginfo("transform published")
+            return
+    except:
+        rospy.loginfo("transform not published")
         return
     ##########################################################################################
     # Convert the image to cv2 format
@@ -134,9 +139,10 @@ def img_clbck(img_msg):
     # check if the image is not corrupted
     if image is None:
         return
-    rospy.loginfo(f"image shape: {image.shape}")
+    
     # clear global variables if not already found
     if is_two_found != 2:
+        rospy.loginfo(f"image shape: {image.shape}")
         red_pose = []
         yellow_pose = []
         image_processing(image)
@@ -160,23 +166,26 @@ def depth_clbck(depth_msg):
     '''
     ############################### Add your code here #######################################
     ################### broadcast the transform
-    if is_two_found == 3:
-        br.sendTransform(red_object,
-                         orent_g,
-                         rospy.Time.now(),
-                         "fruit_red",
-                         "ebot_base")
-        br.sendTransform(yellow_object,
-                         orent_g,
-                         rospy.Time.now(),
-                         "fruit_yellow",
-                         "ebot_base")
-        rospy.loginfo("transform published")
+    try:
+        if is_two_found == 3:
+            br.sendTransform(red_object,
+                            orent_g,
+                            rospy.Time.now(),
+                            "fruit_red",
+                            "ebot_base")
+            br.sendTransform(yellow_object,
+                            orent_g,
+                            rospy.Time.now(),
+                            "fruit_yellow",
+                            "ebot_base")
+            rospy.loginfo("transform published")
+            return
+    except:
+        rospy.loginfo("transform not published")
         return
     ##########################################################################################
 
-    #####################
-    global is_two_found
+    ####################
     bridge = CvBridge()
     depth_img = bridge.imgmsg_to_cv2(depth_msg, "16UC1")
 
@@ -185,9 +194,10 @@ def depth_clbck(depth_msg):
         return
 
     # print the image shape
-    rospy.loginfo(f"depth image shape: {depth_img.shape}")
+    
 
     if is_two_found == 2:
+        rospy.loginfo(f"depth image shape: {depth_img.shape}")
         calculate_coordinates(depth_img)
 
     
@@ -272,7 +282,9 @@ def image_processing(image):
 # function to calculate the x y z with respect to the ebot base frame
 def calculate_coordinates(depth_img):
     # the global values to be used
-    global pose_g_red, pose_g_yellow, is_two_found, red_object, yellow_object, orent_g
+    global pose_g_red, pose_g_yellow, is_two_found, red_object, yellow_object, orent_g, count
+    if count == 100:
+        return
     # the focal length of the camera
     f = 554.3827128226441
     # the center from camera
@@ -286,35 +298,55 @@ def calculate_coordinates(depth_img):
     pose_g_yellow.append(yellow_depth)
 
     # calculate the x y z of the red pepper
-    red_x = (pose_g_red[0] - center[0]) * red_depth / f
-    red_y = (pose_g_red[1] - center[1]) * red_depth / f
+    red_x = ((pose_g_red[0] - center[0]) / f) * red_depth
+    red_y = ((pose_g_red[1] - center[1]) / f) * red_depth
     
     # calculate the x y z of the yellow pepper
-    yellow_x = (pose_g_yellow[0] - center[0]) * yellow_depth / f
-    yellow_y = (pose_g_yellow[1] - center[1]) * yellow_depth / f
+    yellow_x = ((pose_g_yellow[0] - center[0]) / f) * yellow_depth
+    yellow_y = ((pose_g_yellow[1] - center[1]) / f) * yellow_depth
 
     # print the values
-    rospy.loginfo(f"Red Pepper: x: {red_x}, y: {red_y}, z: {red_depth}")
-    rospy.loginfo(f"Yellow Pepper: x: {yellow_x}, y: {yellow_y}, z: {yellow_depth}")
+    #rospy.loginfo(f"Red Pepper: x: {red_x}, y: {red_y}, z: {red_depth}")
+    #rospy.loginfo(f"Yellow Pepper: x: {yellow_x}, y: {yellow_y}, z: {yellow_depth}")
 
     # get the coordinates of camera frame
-    li = tf.TransformListener()
-    while True:
-        try:
-            (trans, orents) = li.lookupTransform('ebot_base', 'camera_link2', rospy.Time(0))
-            break
-        except (tf.LookupException, tf.ConnectivityException, tf.ExtrapolationException):
-            continue
+    #li = tf.TransformListener()
+    #while True:
+    #    try:
+    #        (trans, orents) = li.lookupTransform('ebot_base', 'camera_link2', rospy.Time(0))
+    #        break
+    #    except (tf.LookupException, tf.ConnectivityException, tf.ExtrapolationException):
+    #        continue
     
     # calculate the final coordinates with respect to the ebot base frame
-    red_object = (trans[0] + red_x, trans[1] + red_y,trans[2] + red_depth)
-    yellow_object = (trans[0] + yellow_x, trans[1] + yellow_y, trans[2] + yellow_depth)
-    orent_g = orents
+    #red_object = (trans[0] + red_x, trans[1] + red_y,trans[2] + red_depth)
+    #yellow_object = (trans[0] + yellow_x, trans[1] + yellow_y, trans[2] + yellow_depth)
+    #orent_g = orents
+    red_object = (red_x, red_y, red_depth)
+    yellow_object = (yellow_x, yellow_y, yellow_depth)
+    orent_g = (0, 0, 0, 1)
 
-    is_two_found = 3
+    # when to stop every thing
+    count = 100
+    if count == 100:
+        is_two_found = 3
 
 
 
+
+def infinte_loop():
+    while rospy.is_shutdown():
+        br.sendTransform(red_object,
+                            orent_g,
+                            rospy.Time.now(),
+                            "fruit_red",
+                            "ebot_base")
+        br.sendTransform(yellow_object,
+                            orent_g,
+                            rospy.Time.now(),
+                            "fruit_yellow",
+                            "ebot_base")
+    
 
 
 
@@ -333,15 +365,20 @@ def main():
 
     rospy.init_node("percepStack", anonymous=True)
     # define a rate
-    rate = rospy.Rate(10)
+    #rate = rospy.Rate(10)
 
     # start looping
-    while not rospy.is_shutdown():
-        # subscribe to the image topic
-        rospy.Subscriber("/camera/color/image_raw2", Image, img_clbck)
-        # subscribe to the depth topic
-        rospy.Subscriber("/camera/depth/image_raw2",Image, depth_clbck)
-        rate.sleep()
+    #while not rospy.is_shutdown():
+    # subscribe to the image topic
+    rgb_sub = rospy.Subscriber("/camera/color/image_raw2", Image, img_clbck)
+    # subscribe to the depth topic
+    depth_sub = rospy.Subscriber("/camera/depth/image_raw2",Image, depth_clbck)
+
+    if is_two_found == 3:
+        rgb_sub.unregister()
+        depth_sub.unregister()
+        infinte_loop()
+    rospy.spin()
 
     ####################################################################################################
 
