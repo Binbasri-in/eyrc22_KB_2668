@@ -1,0 +1,4062 @@
+transforms: 
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 107
+        nsecs: 140000000
+      frame_id: "upper_arm_link"
+    child_frame_id: "forearm_link"
+    transform: 
+      translation: 
+        x: 0.0
+        y: -0.1197
+        z: 0.425
+      rotation: 
+        x: 0.0
+        y: 0.8186947742817559
+        z: 0.0
+        w: 0.574228932189719
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 107
+        nsecs: 140000000
+      frame_id: "gripper_finger1_inner_knuckle_link"
+    child_frame_id: "gripper_finger1_finger_tip_link"
+    transform: 
+      translation: 
+        x: 0.04303959807
+        y: -0.03759940821
+        z: 0.0
+      rotation: 
+        x: 0.0
+        y: 0.0
+        z: -0.0026664552968425075
+        w: 0.999996445001756
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 107
+        nsecs: 140000000
+      frame_id: "gripper_base_link"
+    child_frame_id: "gripper_finger1_inner_knuckle_link"
+    transform: 
+      translation: 
+        x: 0.06142
+        y: 0.0127
+        z: 0.0
+      rotation: 
+        x: 0.9999964450017559
+        y: -0.0026664552968425075
+        z: 1.6327329721738414e-19
+        w: 6.123212227650664e-17
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 107
+        nsecs: 140000000
+      frame_id: "gripper_base_link"
+    child_frame_id: "gripper_finger1_knuckle_link"
+    transform: 
+      translation: 
+        x: 0.05490451627
+        y: 0.03060114443
+        z: 0.0
+      rotation: 
+        x: 0.9999964450017559
+        y: -0.0026664552968425075
+        z: 1.6327329721738414e-19
+        w: 6.123212227650664e-17
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 107
+        nsecs: 140000000
+      frame_id: "gripper_finger2_inner_knuckle_link"
+    child_frame_id: "gripper_finger2_finger_tip_link"
+    transform: 
+      translation: 
+        x: 0.04303959807
+        y: -0.03759940821
+        z: 0.0
+      rotation: 
+        x: 0.0
+        y: 0.0
+        z: -0.0026664552968425075
+        w: 0.999996445001756
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 107
+        nsecs: 140000000
+      frame_id: "gripper_base_link"
+    child_frame_id: "gripper_finger2_inner_knuckle_link"
+    transform: 
+      translation: 
+        x: 0.06142
+        y: -0.0127
+        z: 0.0
+      rotation: 
+        x: 0.0
+        y: 0.0
+        z: 0.0026664552968425075
+        w: 0.999996445001756
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 107
+        nsecs: 140000000
+      frame_id: "gripper_base_link"
+    child_frame_id: "gripper_finger2_knuckle_link"
+    transform: 
+      translation: 
+        x: 0.05490451627
+        y: -0.03060114443
+        z: 0.0
+      rotation: 
+        x: 0.0
+        y: 0.0
+        z: 0.0026664552968425075
+        w: 0.999996445001756
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 107
+        nsecs: 140000000
+      frame_id: "shoulder_link"
+    child_frame_id: "upper_arm_link"
+    transform: 
+      translation: 
+        x: 0.0
+        y: 0.13585
+        z: 0.0
+      rotation: 
+        x: 0.0
+        y: -0.495754148116618
+        z: 0.0
+        w: 0.8684629091821747
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 107
+        nsecs: 140000000
+      frame_id: "base_link"
+    child_frame_id: "shoulder_link"
+    transform: 
+      translation: 
+        x: 0.0
+        y: 0.0
+        z: 0.089159
+      rotation: 
+        x: 0.0
+        y: 0.0
+        z: 0.25079156849452905
+        w: 0.9680411092366139
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 107
+        nsecs: 140000000
+      frame_id: "forearm_link"
+    child_frame_id: "wrist_1_link"
+    transform: 
+      translation: 
+        x: 0.0
+        y: 0.0
+        z: 0.39225
+      rotation: 
+        x: 0.0
+        y: 0.9019472481216759
+        z: 0.0
+        w: 0.4318462244893844
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 107
+        nsecs: 140000000
+      frame_id: "wrist_1_link"
+    child_frame_id: "wrist_2_link"
+    transform: 
+      translation: 
+        x: 0.0
+        y: 0.093
+        z: 0.0
+      rotation: 
+        x: 0.0
+        y: 0.0
+        z: 0.7070889034076073
+        w: 0.7071246585134953
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 107
+        nsecs: 140000000
+      frame_id: "wrist_2_link"
+    child_frame_id: "wrist_3_link"
+    transform: 
+      translation: 
+        x: 0.0
+        y: 0.0
+        z: 0.09465
+      rotation: 
+        x: 0.0
+        y: 1.8352400400569806e-05
+        z: 0.0
+        w: 0.9999999998315947
+---
+transforms: 
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 107
+        nsecs: 154000000
+      frame_id: "odom"
+    child_frame_id: "ebot_base"
+    transform: 
+      translation: 
+        x: 0.01888502270923423
+        y: -0.0031855359600602056
+        z: 0.22000059502579
+      rotation: 
+        x: 2.4254596122123038e-08
+        y: -8.710330785645204e-07
+        z: -0.0013860462538846199
+        w: 0.9999990394370502
+---
+transforms: 
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 107
+        nsecs: 160000000
+      frame_id: "upper_arm_link"
+    child_frame_id: "forearm_link"
+    transform: 
+      translation: 
+        x: 0.0
+        y: -0.1197
+        z: 0.425
+      rotation: 
+        x: 0.0
+        y: 0.817505582066857
+        z: 0.0
+        w: 0.5759206744765545
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 107
+        nsecs: 160000000
+      frame_id: "gripper_finger1_inner_knuckle_link"
+    child_frame_id: "gripper_finger1_finger_tip_link"
+    transform: 
+      translation: 
+        x: 0.04303959807
+        y: -0.03759940821
+        z: 0.0
+      rotation: 
+        x: 0.0
+        y: 0.0
+        z: -0.002666455283592265
+        w: 0.9999964450017912
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 107
+        nsecs: 160000000
+      frame_id: "gripper_base_link"
+    child_frame_id: "gripper_finger1_inner_knuckle_link"
+    transform: 
+      translation: 
+        x: 0.06142
+        y: 0.0127
+        z: 0.0
+      rotation: 
+        x: 0.9999964450017913
+        y: -0.002666455283592265
+        z: 1.6327329640604077e-19
+        w: 6.12321222765088e-17
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 107
+        nsecs: 160000000
+      frame_id: "gripper_base_link"
+    child_frame_id: "gripper_finger1_knuckle_link"
+    transform: 
+      translation: 
+        x: 0.05490451627
+        y: 0.03060114443
+        z: 0.0
+      rotation: 
+        x: 0.9999964450017913
+        y: -0.002666455283592265
+        z: 1.6327329640604077e-19
+        w: 6.12321222765088e-17
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 107
+        nsecs: 160000000
+      frame_id: "gripper_finger2_inner_knuckle_link"
+    child_frame_id: "gripper_finger2_finger_tip_link"
+    transform: 
+      translation: 
+        x: 0.04303959807
+        y: -0.03759940821
+        z: 0.0
+      rotation: 
+        x: 0.0
+        y: 0.0
+        z: -0.002666455283592265
+        w: 0.9999964450017912
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 107
+        nsecs: 160000000
+      frame_id: "gripper_base_link"
+    child_frame_id: "gripper_finger2_inner_knuckle_link"
+    transform: 
+      translation: 
+        x: 0.06142
+        y: -0.0127
+        z: 0.0
+      rotation: 
+        x: 0.0
+        y: 0.0
+        z: 0.002666455283592265
+        w: 0.9999964450017912
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 107
+        nsecs: 160000000
+      frame_id: "gripper_base_link"
+    child_frame_id: "gripper_finger2_knuckle_link"
+    transform: 
+      translation: 
+        x: 0.05490451627
+        y: -0.03060114443
+        z: 0.0
+      rotation: 
+        x: 0.0
+        y: 0.0
+        z: 0.002666455283592265
+        w: 0.9999964450017912
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 107
+        nsecs: 160000000
+      frame_id: "shoulder_link"
+    child_frame_id: "upper_arm_link"
+    transform: 
+      translation: 
+        x: 0.0
+        y: 0.13585
+        z: 0.0
+      rotation: 
+        x: 0.0
+        y: -0.4967867643054087
+        z: 0.0
+        w: 0.8678726351320004
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 107
+        nsecs: 160000000
+      frame_id: "base_link"
+    child_frame_id: "shoulder_link"
+    transform: 
+      translation: 
+        x: 0.0
+        y: 0.0
+        z: 0.089159
+      rotation: 
+        x: 0.0
+        y: 0.0
+        z: 0.2531083839186669
+        w: 0.9674379287530962
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 107
+        nsecs: 160000000
+      frame_id: "forearm_link"
+    child_frame_id: "wrist_1_link"
+    transform: 
+      translation: 
+        x: 0.0
+        y: 0.0
+        z: 0.39225
+      rotation: 
+        x: 0.0
+        y: 0.9033245335288889
+        z: 0.0
+        w: 0.42895779177538607
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 107
+        nsecs: 160000000
+      frame_id: "wrist_1_link"
+    child_frame_id: "wrist_2_link"
+    transform: 
+      translation: 
+        x: 0.0
+        y: 0.093
+        z: 0.0
+      rotation: 
+        x: 0.0
+        y: 0.0
+        z: 0.7070888863554381
+        w: 0.7071246755648019
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 107
+        nsecs: 160000000
+      frame_id: "wrist_2_link"
+    child_frame_id: "wrist_3_link"
+    transform: 
+      translation: 
+        x: 0.0
+        y: 0.0
+        z: 0.09465
+      rotation: 
+        x: 0.0
+        y: 1.8239436587174188e-05
+        z: 0.0
+        w: 0.9999999998336615
+---
+transforms: 
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 107
+        nsecs: 180000000
+      frame_id: "upper_arm_link"
+    child_frame_id: "forearm_link"
+    transform: 
+      translation: 
+        x: 0.0
+        y: -0.1197
+        z: 0.425
+      rotation: 
+        x: 0.0
+        y: 0.8163128940638762
+        z: 0.0
+        w: 0.5776099540217939
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 107
+        nsecs: 180000000
+      frame_id: "gripper_finger1_inner_knuckle_link"
+    child_frame_id: "gripper_finger1_finger_tip_link"
+    transform: 
+      translation: 
+        x: 0.04303959807
+        y: -0.03759940821
+        z: 0.0
+      rotation: 
+        x: 0.0
+        y: 0.0
+        z: -0.002666455275280721
+        w: 0.9999964450018134
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 107
+        nsecs: 180000000
+      frame_id: "gripper_base_link"
+    child_frame_id: "gripper_finger1_inner_knuckle_link"
+    transform: 
+      translation: 
+        x: 0.06142
+        y: 0.0127
+        z: 0.0
+      rotation: 
+        x: 0.9999964450018134
+        y: -0.002666455275280721
+        z: 1.6327329589710548e-19
+        w: 6.123212227651016e-17
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 107
+        nsecs: 180000000
+      frame_id: "gripper_base_link"
+    child_frame_id: "gripper_finger1_knuckle_link"
+    transform: 
+      translation: 
+        x: 0.05490451627
+        y: 0.03060114443
+        z: 0.0
+      rotation: 
+        x: 0.9999964450018134
+        y: -0.002666455275280721
+        z: 1.6327329589710548e-19
+        w: 6.123212227651016e-17
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 107
+        nsecs: 180000000
+      frame_id: "gripper_finger2_inner_knuckle_link"
+    child_frame_id: "gripper_finger2_finger_tip_link"
+    transform: 
+      translation: 
+        x: 0.04303959807
+        y: -0.03759940821
+        z: 0.0
+      rotation: 
+        x: 0.0
+        y: 0.0
+        z: -0.002666455275280721
+        w: 0.9999964450018134
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 107
+        nsecs: 180000000
+      frame_id: "gripper_base_link"
+    child_frame_id: "gripper_finger2_inner_knuckle_link"
+    transform: 
+      translation: 
+        x: 0.06142
+        y: -0.0127
+        z: 0.0
+      rotation: 
+        x: 0.0
+        y: 0.0
+        z: 0.002666455275280721
+        w: 0.9999964450018134
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 107
+        nsecs: 180000000
+      frame_id: "gripper_base_link"
+    child_frame_id: "gripper_finger2_knuckle_link"
+    transform: 
+      translation: 
+        x: 0.05490451627
+        y: -0.03060114443
+        z: 0.0
+      rotation: 
+        x: 0.0
+        y: 0.0
+        z: 0.002666455275280721
+        w: 0.9999964450018134
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 107
+        nsecs: 180000000
+      frame_id: "shoulder_link"
+    child_frame_id: "upper_arm_link"
+    transform: 
+      translation: 
+        x: 0.0
+        y: 0.13585
+        z: 0.0
+      rotation: 
+        x: 0.0
+        y: -0.4978186777961603
+        z: 0.0
+        w: 0.8672811332187982
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 107
+        nsecs: 180000000
+      frame_id: "base_link"
+    child_frame_id: "shoulder_link"
+    transform: 
+      translation: 
+        x: 0.0
+        y: 0.0
+        z: 0.089159
+      rotation: 
+        x: 0.0
+        y: 0.0
+        z: 0.25542374865523804
+        w: 0.9668292034392145
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 107
+        nsecs: 180000000
+      frame_id: "forearm_link"
+    child_frame_id: "wrist_1_link"
+    transform: 
+      translation: 
+        x: 0.0
+        y: 0.0
+        z: 0.39225
+      rotation: 
+        x: 0.0
+        y: 0.9046925689224168
+        z: 0.0
+        w: 0.42606496656796145
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 107
+        nsecs: 180000000
+      frame_id: "wrist_1_link"
+    child_frame_id: "wrist_2_link"
+    transform: 
+      translation: 
+        x: 0.0
+        y: 0.093
+        z: 0.0
+      rotation: 
+        x: 0.0
+        y: 0.0
+        z: 0.7070888692912538
+        w: 0.7071246926281222
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 107
+        nsecs: 180000000
+      frame_id: "wrist_2_link"
+    child_frame_id: "wrist_3_link"
+    transform: 
+      translation: 
+        x: 0.0
+        y: 0.0
+        z: 0.09465
+      rotation: 
+        x: 0.0
+        y: 1.8126470312635942e-05
+        z: 0.0
+        w: 0.9999999998357154
+---
+transforms: 
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 107
+        nsecs: 200000000
+      frame_id: "ebot_base"
+    child_frame_id: "FWL"
+    transform: 
+      translation: 
+        x: 0.199948480594093
+        y: 0.192163491981716
+        z: 0.0450000000000047
+      rotation: 
+        x: 0.0
+        y: 0.0
+        z: 0.0033985275945284635
+        w: 0.9999942249884194
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 107
+        nsecs: 200000000
+      frame_id: "ebot_base"
+    child_frame_id: "FWR"
+    transform: 
+      translation: 
+        x: 0.202539503068943
+        y: -0.189027702306049
+        z: 0.0449999999999943
+      rotation: 
+        x: 0.8980148022068737
+        y: 0.0030519457106136147
+        z: -0.43995211674401435
+        w: 0.0014951980438090466
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 107
+        nsecs: 200000000
+      frame_id: "ebot_base"
+    child_frame_id: "RWL"
+    transform: 
+      translation: 
+        x: -0.200042279414009
+        y: 0.189444685607321
+        z: 0.0449999999999969
+      rotation: 
+        x: 0.0
+        y: 0.0
+        z: 0.0033985275945284635
+        w: 0.9999942249884194
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 107
+        nsecs: 200000000
+      frame_id: "ebot_base"
+    child_frame_id: "RWR"
+    transform: 
+      translation: 
+        x: -0.197451256939211
+        y: -0.191746508680447
+        z: 0.044999999999993
+      rotation: 
+        x: 0.9631073245699101
+        y: 0.003273165721612107
+        z: -0.26909613778346797
+        w: 0.0009145359312919845
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 107
+        nsecs: 200000000
+      frame_id: "upper_arm_link"
+    child_frame_id: "forearm_link"
+    transform: 
+      translation: 
+        x: 0.0
+        y: -0.1197
+        z: 0.425
+      rotation: 
+        x: 0.0
+        y: 0.8163128940638762
+        z: 0.0
+        w: 0.5776099540217939
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 107
+        nsecs: 200000000
+      frame_id: "gripper_finger1_inner_knuckle_link"
+    child_frame_id: "gripper_finger1_finger_tip_link"
+    transform: 
+      translation: 
+        x: 0.04303959807
+        y: -0.03759940821
+        z: 0.0
+      rotation: 
+        x: 0.0
+        y: 0.0
+        z: -0.002666455275280721
+        w: 0.9999964450018134
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 107
+        nsecs: 200000000
+      frame_id: "gripper_base_link"
+    child_frame_id: "gripper_finger1_inner_knuckle_link"
+    transform: 
+      translation: 
+        x: 0.06142
+        y: 0.0127
+        z: 0.0
+      rotation: 
+        x: 0.9999964450018134
+        y: -0.002666455275280721
+        z: 1.6327329589710548e-19
+        w: 6.123212227651016e-17
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 107
+        nsecs: 200000000
+      frame_id: "gripper_base_link"
+    child_frame_id: "gripper_finger1_knuckle_link"
+    transform: 
+      translation: 
+        x: 0.05490451627
+        y: 0.03060114443
+        z: 0.0
+      rotation: 
+        x: 0.9999964450018134
+        y: -0.002666455275280721
+        z: 1.6327329589710548e-19
+        w: 6.123212227651016e-17
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 107
+        nsecs: 200000000
+      frame_id: "gripper_finger2_inner_knuckle_link"
+    child_frame_id: "gripper_finger2_finger_tip_link"
+    transform: 
+      translation: 
+        x: 0.04303959807
+        y: -0.03759940821
+        z: 0.0
+      rotation: 
+        x: 0.0
+        y: 0.0
+        z: -0.002666455275280721
+        w: 0.9999964450018134
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 107
+        nsecs: 200000000
+      frame_id: "gripper_base_link"
+    child_frame_id: "gripper_finger2_inner_knuckle_link"
+    transform: 
+      translation: 
+        x: 0.06142
+        y: -0.0127
+        z: 0.0
+      rotation: 
+        x: 0.0
+        y: 0.0
+        z: 0.002666455275280721
+        w: 0.9999964450018134
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 107
+        nsecs: 200000000
+      frame_id: "gripper_base_link"
+    child_frame_id: "gripper_finger2_knuckle_link"
+    transform: 
+      translation: 
+        x: 0.05490451627
+        y: -0.03060114443
+        z: 0.0
+      rotation: 
+        x: 0.0
+        y: 0.0
+        z: 0.002666455275280721
+        w: 0.9999964450018134
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 107
+        nsecs: 200000000
+      frame_id: "shoulder_link"
+    child_frame_id: "upper_arm_link"
+    transform: 
+      translation: 
+        x: 0.0
+        y: 0.13585
+        z: 0.0
+      rotation: 
+        x: 0.0
+        y: -0.4978186777961603
+        z: 0.0
+        w: 0.8672811332187982
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 107
+        nsecs: 200000000
+      frame_id: "base_link"
+    child_frame_id: "shoulder_link"
+    transform: 
+      translation: 
+        x: 0.0
+        y: 0.0
+        z: 0.089159
+      rotation: 
+        x: 0.0
+        y: 0.0
+        z: 0.25542374865523804
+        w: 0.9668292034392145
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 107
+        nsecs: 200000000
+      frame_id: "forearm_link"
+    child_frame_id: "wrist_1_link"
+    transform: 
+      translation: 
+        x: 0.0
+        y: 0.0
+        z: 0.39225
+      rotation: 
+        x: 0.0
+        y: 0.9046925689224168
+        z: 0.0
+        w: 0.42606496656796145
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 107
+        nsecs: 200000000
+      frame_id: "wrist_1_link"
+    child_frame_id: "wrist_2_link"
+    transform: 
+      translation: 
+        x: 0.0
+        y: 0.093
+        z: 0.0
+      rotation: 
+        x: 0.0
+        y: 0.0
+        z: 0.7070888692912538
+        w: 0.7071246926281222
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 107
+        nsecs: 200000000
+      frame_id: "wrist_2_link"
+    child_frame_id: "wrist_3_link"
+    transform: 
+      translation: 
+        x: 0.0
+        y: 0.0
+        z: 0.09465
+      rotation: 
+        x: 0.0
+        y: 1.8126470312635942e-05
+        z: 0.0
+        w: 0.9999999998357154
+---
+transforms: 
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 107
+        nsecs: 205000000
+      frame_id: "odom"
+    child_frame_id: "ebot_base"
+    transform: 
+      translation: 
+        x: 0.0188873800008716
+        y: -0.0031855282886763194
+        z: 0.22000059310218836
+      rotation: 
+        x: 4.4782518404610007e-08
+        y: -8.894183465010749e-07
+        z: -0.0013860449466187145
+        w: 0.999999039438845
+---
+transforms: 
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 107
+        nsecs: 220000000
+      frame_id: "upper_arm_link"
+    child_frame_id: "forearm_link"
+    transform: 
+      translation: 
+        x: 0.0
+        y: -0.1197
+        z: 0.425
+      rotation: 
+        x: 0.0
+        y: 0.8139170511090231
+        z: 0.0
+        w: 0.5809810960039852
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 107
+        nsecs: 220000000
+      frame_id: "gripper_finger1_inner_knuckle_link"
+    child_frame_id: "gripper_finger1_finger_tip_link"
+    transform: 
+      translation: 
+        x: 0.04303959807
+        y: -0.03759940821
+        z: 0.0
+      rotation: 
+        x: 0.0
+        y: 0.0
+        z: -0.002666455273648699
+        w: 0.9999964450018176
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 107
+        nsecs: 220000000
+      frame_id: "gripper_base_link"
+    child_frame_id: "gripper_finger1_inner_knuckle_link"
+    transform: 
+      translation: 
+        x: 0.06142
+        y: 0.0127
+        z: 0.0
+      rotation: 
+        x: 0.9999964450018177
+        y: -0.002666455273648699
+        z: 1.6327329579717297e-19
+        w: 6.123212227651042e-17
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 107
+        nsecs: 220000000
+      frame_id: "gripper_base_link"
+    child_frame_id: "gripper_finger1_knuckle_link"
+    transform: 
+      translation: 
+        x: 0.05490451627
+        y: 0.03060114443
+        z: 0.0
+      rotation: 
+        x: 0.9999964450018177
+        y: -0.002666455273648699
+        z: 1.6327329579717297e-19
+        w: 6.123212227651042e-17
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 107
+        nsecs: 220000000
+      frame_id: "gripper_finger2_inner_knuckle_link"
+    child_frame_id: "gripper_finger2_finger_tip_link"
+    transform: 
+      translation: 
+        x: 0.04303959807
+        y: -0.03759940821
+        z: 0.0
+      rotation: 
+        x: 0.0
+        y: 0.0
+        z: -0.002666455273648699
+        w: 0.9999964450018176
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 107
+        nsecs: 220000000
+      frame_id: "gripper_base_link"
+    child_frame_id: "gripper_finger2_inner_knuckle_link"
+    transform: 
+      translation: 
+        x: 0.06142
+        y: -0.0127
+        z: 0.0
+      rotation: 
+        x: 0.0
+        y: 0.0
+        z: 0.002666455273648699
+        w: 0.9999964450018176
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 107
+        nsecs: 220000000
+      frame_id: "gripper_base_link"
+    child_frame_id: "gripper_finger2_knuckle_link"
+    transform: 
+      translation: 
+        x: 0.05490451627
+        y: -0.03060114443
+        z: 0.0
+      rotation: 
+        x: 0.0
+        y: 0.0
+        z: 0.002666455273648699
+        w: 0.9999964450018176
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 107
+        nsecs: 220000000
+      frame_id: "shoulder_link"
+    child_frame_id: "upper_arm_link"
+    transform: 
+      translation: 
+        x: 0.0
+        y: 0.13585
+        z: 0.0
+      rotation: 
+        x: 0.0
+        y: -0.4998803908393953
+        z: 0.0
+        w: 0.8660944491533549
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 107
+        nsecs: 220000000
+      frame_id: "base_link"
+    child_frame_id: "shoulder_link"
+    transform: 
+      translation: 
+        x: 0.0
+        y: 0.0
+        z: 0.089159
+      rotation: 
+        x: 0.0
+        y: 0.0
+        z: 0.2600500729928314
+        w: 0.9655951323077511
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 107
+        nsecs: 220000000
+      frame_id: "forearm_link"
+    child_frame_id: "wrist_1_link"
+    transform: 
+      translation: 
+        x: 0.0
+        y: 0.0
+        z: 0.39225
+      rotation: 
+        x: 0.0
+        y: 0.907400833729934
+        z: 0.0
+        w: 0.42026625720633437
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 107
+        nsecs: 220000000
+      frame_id: "wrist_1_link"
+    child_frame_id: "wrist_2_link"
+    transform: 
+      translation: 
+        x: 0.0
+        y: 0.093
+        z: 0.0
+      rotation: 
+        x: 0.0
+        y: 0.0
+        z: 0.7070888351265643
+        w: 0.7071247267910792
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 107
+        nsecs: 220000000
+      frame_id: "wrist_2_link"
+    child_frame_id: "wrist_3_link"
+    transform: 
+      translation: 
+        x: 0.0
+        y: 0.0
+        z: 0.09465
+      rotation: 
+        x: 0.0
+        y: 1.7900530104796235e-05
+        z: 0.0
+        w: 0.9999999998397855
+---
+transforms: 
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 107
+        nsecs: 240000000
+      frame_id: "upper_arm_link"
+    child_frame_id: "forearm_link"
+    transform: 
+      translation: 
+        x: 0.0
+        y: -0.1197
+        z: 0.425
+      rotation: 
+        x: 0.0
+        y: 0.8127139064021611
+        z: 0.0
+        w: 0.5826629440255656
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 107
+        nsecs: 240000000
+      frame_id: "gripper_finger1_inner_knuckle_link"
+    child_frame_id: "gripper_finger1_finger_tip_link"
+    transform: 
+      translation: 
+        x: 0.04303959807
+        y: -0.03759940821
+        z: 0.0
+      rotation: 
+        x: 0.0
+        y: 0.0
+        z: -0.002666455280421924
+        w: 0.9999964450017996
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 107
+        nsecs: 240000000
+      frame_id: "gripper_base_link"
+    child_frame_id: "gripper_finger1_inner_knuckle_link"
+    transform: 
+      translation: 
+        x: 0.06142
+        y: 0.0127
+        z: 0.0
+      rotation: 
+        x: 0.9999964450017997
+        y: -0.0026664552804219234
+        z: 1.6327329621191334e-19
+        w: 6.123212227650932e-17
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 107
+        nsecs: 240000000
+      frame_id: "gripper_base_link"
+    child_frame_id: "gripper_finger1_knuckle_link"
+    transform: 
+      translation: 
+        x: 0.05490451627
+        y: 0.03060114443
+        z: 0.0
+      rotation: 
+        x: 0.9999964450017997
+        y: -0.0026664552804219234
+        z: 1.6327329621191334e-19
+        w: 6.123212227650932e-17
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 107
+        nsecs: 240000000
+      frame_id: "gripper_finger2_inner_knuckle_link"
+    child_frame_id: "gripper_finger2_finger_tip_link"
+    transform: 
+      translation: 
+        x: 0.04303959807
+        y: -0.03759940821
+        z: 0.0
+      rotation: 
+        x: 0.0
+        y: 0.0
+        z: -0.002666455280421924
+        w: 0.9999964450017996
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 107
+        nsecs: 240000000
+      frame_id: "gripper_base_link"
+    child_frame_id: "gripper_finger2_inner_knuckle_link"
+    transform: 
+      translation: 
+        x: 0.06142
+        y: -0.0127
+        z: 0.0
+      rotation: 
+        x: 0.0
+        y: 0.0
+        z: 0.002666455280421924
+        w: 0.9999964450017996
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 107
+        nsecs: 240000000
+      frame_id: "gripper_base_link"
+    child_frame_id: "gripper_finger2_knuckle_link"
+    transform: 
+      translation: 
+        x: 0.05490451627
+        y: -0.03060114443
+        z: 0.0
+      rotation: 
+        x: 0.0
+        y: 0.0
+        z: 0.002666455280421924
+        w: 0.9999964450017996
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 107
+        nsecs: 240000000
+      frame_id: "shoulder_link"
+    child_frame_id: "upper_arm_link"
+    transform: 
+      translation: 
+        x: 0.0
+        y: 0.13585
+        z: 0.0
+      rotation: 
+        x: 0.0
+        y: -0.5009101874725199
+        z: 0.0
+        w: 0.8654992686803639
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 107
+        nsecs: 240000000
+      frame_id: "base_link"
+    child_frame_id: "shoulder_link"
+    transform: 
+      translation: 
+        x: 0.0
+        y: 0.0
+        z: 0.089159
+      rotation: 
+        x: 0.0
+        y: 0.0
+        z: 0.2623610060783271
+        w: 0.9649697935632846
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 107
+        nsecs: 240000000
+      frame_id: "forearm_link"
+    child_frame_id: "wrist_1_link"
+    transform: 
+      translation: 
+        x: 0.0
+        y: 0.0
+        z: 0.39225
+      rotation: 
+        x: 0.0
+        y: 0.9087410354118921
+        z: 0.0
+        w: 0.41736043243043797
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 107
+        nsecs: 240000000
+      frame_id: "wrist_1_link"
+    child_frame_id: "wrist_2_link"
+    transform: 
+      translation: 
+        x: 0.0
+        y: 0.093
+        z: 0.0
+      rotation: 
+        x: 0.0
+        y: 0.0
+        z: 0.7070888180259134
+        w: 0.7071247438908617
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 107
+        nsecs: 240000000
+      frame_id: "wrist_2_link"
+    child_frame_id: "wrist_3_link"
+    transform: 
+      translation: 
+        x: 0.0
+        y: 0.0
+        z: 0.09465
+      rotation: 
+        x: 0.0
+        y: 1.778755602583352e-05
+        z: 0.0
+        w: 0.9999999998418014
+---
+transforms: 
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 107
+        nsecs: 255000000
+      frame_id: "odom"
+    child_frame_id: "ebot_base"
+    transform: 
+      translation: 
+        x: 0.018889715941281623
+        y: -0.0031855207472018805
+        z: 0.22000059118818818
+      rotation: 
+        x: 6.553582229661866e-08
+        y: -9.074403789497459e-07
+        z: -0.0013860435987138172
+        w: 0.999999039440696
+---
+transforms: 
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 107
+        nsecs: 260000000
+      frame_id: "upper_arm_link"
+    child_frame_id: "forearm_link"
+    transform: 
+      translation: 
+        x: 0.0
+        y: -0.1197
+        z: 0.425
+      rotation: 
+        x: 0.0
+        y: 0.8115072863972783
+        z: 0.0
+        w: 0.5843423004747523
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 107
+        nsecs: 260000000
+      frame_id: "gripper_finger1_inner_knuckle_link"
+    child_frame_id: "gripper_finger1_finger_tip_link"
+    transform: 
+      translation: 
+        x: 0.04303959807
+        y: -0.03759940821
+        z: 0.0
+      rotation: 
+        x: 0.0
+        y: 0.0
+        z: -0.0026664552928981214
+        w: 0.9999964450017664
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 107
+        nsecs: 260000000
+      frame_id: "gripper_base_link"
+    child_frame_id: "gripper_finger1_inner_knuckle_link"
+    transform: 
+      translation: 
+        x: 0.06142
+        y: 0.0127
+        z: 0.0
+      rotation: 
+        x: 0.9999964450017664
+        y: -0.002666455292898121
+        z: 1.632732969758601e-19
+        w: 6.123212227650727e-17
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 107
+        nsecs: 260000000
+      frame_id: "gripper_base_link"
+    child_frame_id: "gripper_finger1_knuckle_link"
+    transform: 
+      translation: 
+        x: 0.05490451627
+        y: 0.03060114443
+        z: 0.0
+      rotation: 
+        x: 0.9999964450017664
+        y: -0.002666455292898121
+        z: 1.632732969758601e-19
+        w: 6.123212227650727e-17
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 107
+        nsecs: 260000000
+      frame_id: "gripper_finger2_inner_knuckle_link"
+    child_frame_id: "gripper_finger2_finger_tip_link"
+    transform: 
+      translation: 
+        x: 0.04303959807
+        y: -0.03759940821
+        z: 0.0
+      rotation: 
+        x: 0.0
+        y: 0.0
+        z: -0.0026664552928981214
+        w: 0.9999964450017664
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 107
+        nsecs: 260000000
+      frame_id: "gripper_base_link"
+    child_frame_id: "gripper_finger2_inner_knuckle_link"
+    transform: 
+      translation: 
+        x: 0.06142
+        y: -0.0127
+        z: 0.0
+      rotation: 
+        x: 0.0
+        y: 0.0
+        z: 0.0026664552928981214
+        w: 0.9999964450017664
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 107
+        nsecs: 260000000
+      frame_id: "gripper_base_link"
+    child_frame_id: "gripper_finger2_knuckle_link"
+    transform: 
+      translation: 
+        x: 0.05490451627
+        y: -0.03060114443
+        z: 0.0
+      rotation: 
+        x: 0.0
+        y: 0.0
+        z: 0.0026664552928981214
+        w: 0.9999964450017664
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 107
+        nsecs: 260000000
+      frame_id: "shoulder_link"
+    child_frame_id: "upper_arm_link"
+    transform: 
+      translation: 
+        x: 0.0
+        y: 0.13585
+        z: 0.0
+      rotation: 
+        x: 0.0
+        y: -0.5019392755636595
+        z: 0.0
+        w: 0.8649028637058781
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 107
+        nsecs: 260000000
+      frame_id: "base_link"
+    child_frame_id: "shoulder_link"
+    transform: 
+      translation: 
+        x: 0.0
+        y: 0.0
+        z: 0.089159
+      rotation: 
+        x: 0.0
+        y: 0.0
+        z: 0.26467043544613517
+        w: 0.9643389241344318
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 107
+        nsecs: 260000000
+      frame_id: "forearm_link"
+    child_frame_id: "wrist_1_link"
+    transform: 
+      translation: 
+        x: 0.0
+        y: 0.0
+        z: 0.39225
+      rotation: 
+        x: 0.0
+        y: 0.9100719316160484
+        z: 0.0
+        w: 0.41445033391787056
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 107
+        nsecs: 260000000
+      frame_id: "wrist_1_link"
+    child_frame_id: "wrist_2_link"
+    transform: 
+      translation: 
+        x: 0.0
+        y: 0.093
+        z: 0.0
+      rotation: 
+        x: 0.0
+        y: 0.0
+        z: 0.7070888009118996
+        w: 0.7071247610040056
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 107
+        nsecs: 260000000
+      frame_id: "wrist_2_link"
+    child_frame_id: "wrist_3_link"
+    transform: 
+      translation: 
+        x: 0.0
+        y: 0.0
+        z: 0.09465
+      rotation: 
+        x: 0.0
+        y: 1.7674579107364178e-05
+        z: 0.0
+        w: 0.9999999998438045
+---
+transforms: 
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 107
+        nsecs: 280000000
+      frame_id: "upper_arm_link"
+    child_frame_id: "forearm_link"
+    transform: 
+      translation: 
+        x: 0.0
+        y: -0.1197
+        z: 0.425
+      rotation: 
+        x: 0.0
+        y: 0.8102971962540324
+        z: 0.0
+        w: 0.5860191581704938
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 107
+        nsecs: 280000000
+      frame_id: "gripper_finger1_inner_knuckle_link"
+    child_frame_id: "gripper_finger1_finger_tip_link"
+    transform: 
+      translation: 
+        x: 0.04303959807
+        y: -0.03759940821
+        z: 0.0
+      rotation: 
+        x: 0.0
+        y: 0.0
+        z: -0.0026664553105146334
+        w: 0.9999964450017196
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 107
+        nsecs: 280000000
+      frame_id: "gripper_base_link"
+    child_frame_id: "gripper_finger1_inner_knuckle_link"
+    transform: 
+      translation: 
+        x: 0.06142
+        y: 0.0127
+        z: 0.0
+      rotation: 
+        x: 0.9999964450017195
+        y: -0.0026664553105146334
+        z: 1.632732980545604e-19
+        w: 6.123212227650441e-17
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 107
+        nsecs: 280000000
+      frame_id: "gripper_base_link"
+    child_frame_id: "gripper_finger1_knuckle_link"
+    transform: 
+      translation: 
+        x: 0.05490451627
+        y: 0.03060114443
+        z: 0.0
+      rotation: 
+        x: 0.9999964450017195
+        y: -0.0026664553105146334
+        z: 1.632732980545604e-19
+        w: 6.123212227650441e-17
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 107
+        nsecs: 280000000
+      frame_id: "gripper_finger2_inner_knuckle_link"
+    child_frame_id: "gripper_finger2_finger_tip_link"
+    transform: 
+      translation: 
+        x: 0.04303959807
+        y: -0.03759940821
+        z: 0.0
+      rotation: 
+        x: 0.0
+        y: 0.0
+        z: -0.0026664553105146334
+        w: 0.9999964450017196
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 107
+        nsecs: 280000000
+      frame_id: "gripper_base_link"
+    child_frame_id: "gripper_finger2_inner_knuckle_link"
+    transform: 
+      translation: 
+        x: 0.06142
+        y: -0.0127
+        z: 0.0
+      rotation: 
+        x: 0.0
+        y: 0.0
+        z: 0.0026664553105146334
+        w: 0.9999964450017196
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 107
+        nsecs: 280000000
+      frame_id: "gripper_base_link"
+    child_frame_id: "gripper_finger2_knuckle_link"
+    transform: 
+      translation: 
+        x: 0.05490451627
+        y: -0.03060114443
+        z: 0.0
+      rotation: 
+        x: 0.0
+        y: 0.0
+        z: 0.0026664553105146334
+        w: 0.9999964450017196
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 107
+        nsecs: 280000000
+      frame_id: "shoulder_link"
+    child_frame_id: "upper_arm_link"
+    transform: 
+      translation: 
+        x: 0.0
+        y: 0.13585
+        z: 0.0
+      rotation: 
+        x: 0.0
+        y: -0.5029676536594393
+        z: 0.0
+        w: 0.8643052350716837
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 107
+        nsecs: 280000000
+      frame_id: "base_link"
+    child_frame_id: "shoulder_link"
+    transform: 
+      translation: 
+        x: 0.0
+        y: 0.0
+        z: 0.089159
+      rotation: 
+        x: 0.0
+        y: 0.0
+        z: 0.2669783478593938
+        w: 0.963702527637169
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 107
+        nsecs: 280000000
+      frame_id: "forearm_link"
+    child_frame_id: "wrist_1_link"
+    transform: 
+      translation: 
+        x: 0.0
+        y: 0.0
+        z: 0.39225
+      rotation: 
+        x: 0.0
+        y: 0.9113935087147954
+        z: 0.0
+        w: 0.41153599146676584
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 107
+        nsecs: 280000000
+      frame_id: "wrist_1_link"
+    child_frame_id: "wrist_2_link"
+    transform: 
+      translation: 
+        x: 0.0
+        y: 0.093
+        z: 0.0
+      rotation: 
+        x: 0.0
+        y: 0.0
+        z: 0.7070887837855101
+        w: 0.7071247781295237
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 107
+        nsecs: 280000000
+      frame_id: "wrist_2_link"
+    child_frame_id: "wrist_3_link"
+    transform: 
+      translation: 
+        x: 0.0
+        y: 0.0
+        z: 0.09465
+      rotation: 
+        x: 0.0
+        y: 1.756159940711979e-05
+        z: 0.0
+        w: 0.9999999998457951
+---
+transforms: 
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 107
+        nsecs: 300000000
+      frame_id: "ebot_base"
+    child_frame_id: "FWL"
+    transform: 
+      translation: 
+        x: 0.199948480594093
+        y: 0.192163491981716
+        z: 0.0450000000000047
+      rotation: 
+        x: 0.0
+        y: 0.0
+        z: 0.0033985275945284635
+        w: 0.9999942249884194
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 107
+        nsecs: 300000000
+      frame_id: "ebot_base"
+    child_frame_id: "FWR"
+    transform: 
+      translation: 
+        x: 0.202539503068943
+        y: -0.189027702306049
+        z: 0.0449999999999943
+      rotation: 
+        x: 0.8980148022068737
+        y: 0.0030519457106136147
+        z: -0.43995211674401435
+        w: 0.0014951980438090466
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 107
+        nsecs: 300000000
+      frame_id: "ebot_base"
+    child_frame_id: "RWL"
+    transform: 
+      translation: 
+        x: -0.200042279414009
+        y: 0.189444685607321
+        z: 0.0449999999999969
+      rotation: 
+        x: 0.0
+        y: 0.0
+        z: 0.0033985275945284635
+        w: 0.9999942249884194
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 107
+        nsecs: 300000000
+      frame_id: "ebot_base"
+    child_frame_id: "RWR"
+    transform: 
+      translation: 
+        x: -0.197451256939211
+        y: -0.191746508680447
+        z: 0.044999999999993
+      rotation: 
+        x: 0.9631073245699101
+        y: 0.003273165721612107
+        z: -0.26909613778346797
+        w: 0.0009145359312919845
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 107
+        nsecs: 300000000
+      frame_id: "upper_arm_link"
+    child_frame_id: "forearm_link"
+    transform: 
+      translation: 
+        x: 0.0
+        y: -0.1197
+        z: 0.425
+      rotation: 
+        x: 0.0
+        y: 0.8102971962540324
+        z: 0.0
+        w: 0.5860191581704938
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 107
+        nsecs: 300000000
+      frame_id: "gripper_finger1_inner_knuckle_link"
+    child_frame_id: "gripper_finger1_finger_tip_link"
+    transform: 
+      translation: 
+        x: 0.04303959807
+        y: -0.03759940821
+        z: 0.0
+      rotation: 
+        x: 0.0
+        y: 0.0
+        z: -0.0026664553105146334
+        w: 0.9999964450017196
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 107
+        nsecs: 300000000
+      frame_id: "gripper_base_link"
+    child_frame_id: "gripper_finger1_inner_knuckle_link"
+    transform: 
+      translation: 
+        x: 0.06142
+        y: 0.0127
+        z: 0.0
+      rotation: 
+        x: 0.9999964450017195
+        y: -0.0026664553105146334
+        z: 1.632732980545604e-19
+        w: 6.123212227650441e-17
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 107
+        nsecs: 300000000
+      frame_id: "gripper_base_link"
+    child_frame_id: "gripper_finger1_knuckle_link"
+    transform: 
+      translation: 
+        x: 0.05490451627
+        y: 0.03060114443
+        z: 0.0
+      rotation: 
+        x: 0.9999964450017195
+        y: -0.0026664553105146334
+        z: 1.632732980545604e-19
+        w: 6.123212227650441e-17
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 107
+        nsecs: 300000000
+      frame_id: "gripper_finger2_inner_knuckle_link"
+    child_frame_id: "gripper_finger2_finger_tip_link"
+    transform: 
+      translation: 
+        x: 0.04303959807
+        y: -0.03759940821
+        z: 0.0
+      rotation: 
+        x: 0.0
+        y: 0.0
+        z: -0.0026664553105146334
+        w: 0.9999964450017196
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 107
+        nsecs: 300000000
+      frame_id: "gripper_base_link"
+    child_frame_id: "gripper_finger2_inner_knuckle_link"
+    transform: 
+      translation: 
+        x: 0.06142
+        y: -0.0127
+        z: 0.0
+      rotation: 
+        x: 0.0
+        y: 0.0
+        z: 0.0026664553105146334
+        w: 0.9999964450017196
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 107
+        nsecs: 300000000
+      frame_id: "gripper_base_link"
+    child_frame_id: "gripper_finger2_knuckle_link"
+    transform: 
+      translation: 
+        x: 0.05490451627
+        y: -0.03060114443
+        z: 0.0
+      rotation: 
+        x: 0.0
+        y: 0.0
+        z: 0.0026664553105146334
+        w: 0.9999964450017196
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 107
+        nsecs: 300000000
+      frame_id: "shoulder_link"
+    child_frame_id: "upper_arm_link"
+    transform: 
+      translation: 
+        x: 0.0
+        y: 0.13585
+        z: 0.0
+      rotation: 
+        x: 0.0
+        y: -0.5029676536594393
+        z: 0.0
+        w: 0.8643052350716837
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 107
+        nsecs: 300000000
+      frame_id: "base_link"
+    child_frame_id: "shoulder_link"
+    transform: 
+      translation: 
+        x: 0.0
+        y: 0.0
+        z: 0.089159
+      rotation: 
+        x: 0.0
+        y: 0.0
+        z: 0.2669783478593938
+        w: 0.963702527637169
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 107
+        nsecs: 300000000
+      frame_id: "forearm_link"
+    child_frame_id: "wrist_1_link"
+    transform: 
+      translation: 
+        x: 0.0
+        y: 0.0
+        z: 0.39225
+      rotation: 
+        x: 0.0
+        y: 0.9113935087147954
+        z: 0.0
+        w: 0.41153599146676584
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 107
+        nsecs: 300000000
+      frame_id: "wrist_1_link"
+    child_frame_id: "wrist_2_link"
+    transform: 
+      translation: 
+        x: 0.0
+        y: 0.093
+        z: 0.0
+      rotation: 
+        x: 0.0
+        y: 0.0
+        z: 0.7070887837855101
+        w: 0.7071247781295237
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 107
+        nsecs: 300000000
+      frame_id: "wrist_2_link"
+    child_frame_id: "wrist_3_link"
+    transform: 
+      translation: 
+        x: 0.0
+        y: 0.0
+        z: 0.09465
+      rotation: 
+        x: 0.0
+        y: 1.756159940711979e-05
+        z: 0.0
+        w: 0.9999999998457951
+---
+transforms: 
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 107
+        nsecs: 305000000
+      frame_id: "odom"
+    child_frame_id: "ebot_base"
+    transform: 
+      translation: 
+        x: 0.018892031546023147
+        y: -0.0031855133255314465
+        z: 0.22000058928515995
+      rotation: 
+        x: 8.650667620439887e-08
+        y: -9.250512140052388e-07
+        z: -0.0013860420510458022
+        w: 0.9999990394428234
+---
+transforms: 
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 107
+        nsecs: 320000000
+      frame_id: "upper_arm_link"
+    child_frame_id: "forearm_link"
+    transform: 
+      translation: 
+        x: 0.0
+        y: -0.1197
+        z: 0.425
+      rotation: 
+        x: 0.0
+        y: 0.8078666262655522
+        z: 0.0
+        w: 0.5893653486304693
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 107
+        nsecs: 320000000
+      frame_id: "gripper_finger1_inner_knuckle_link"
+    child_frame_id: "gripper_finger1_finger_tip_link"
+    transform: 
+      translation: 
+        x: 0.04303959807
+        y: -0.03759940821
+        z: 0.0
+      rotation: 
+        x: 0.0
+        y: 0.0
+        z: -0.0026664553614608104
+        w: 0.9999964450015837
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 107
+        nsecs: 320000000
+      frame_id: "gripper_base_link"
+    child_frame_id: "gripper_finger1_inner_knuckle_link"
+    transform: 
+      translation: 
+        x: 0.06142
+        y: 0.0127
+        z: 0.0
+      rotation: 
+        x: 0.9999964450015836
+        y: -0.002666455361460811
+        z: 1.6327330117411402e-19
+        w: 6.123212227649609e-17
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 107
+        nsecs: 320000000
+      frame_id: "gripper_base_link"
+    child_frame_id: "gripper_finger1_knuckle_link"
+    transform: 
+      translation: 
+        x: 0.05490451627
+        y: 0.03060114443
+        z: 0.0
+      rotation: 
+        x: 0.9999964450015836
+        y: -0.002666455361460811
+        z: 1.6327330117411402e-19
+        w: 6.123212227649609e-17
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 107
+        nsecs: 320000000
+      frame_id: "gripper_finger2_inner_knuckle_link"
+    child_frame_id: "gripper_finger2_finger_tip_link"
+    transform: 
+      translation: 
+        x: 0.04303959807
+        y: -0.03759940821
+        z: 0.0
+      rotation: 
+        x: 0.0
+        y: 0.0
+        z: -0.0026664553614608104
+        w: 0.9999964450015837
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 107
+        nsecs: 320000000
+      frame_id: "gripper_base_link"
+    child_frame_id: "gripper_finger2_inner_knuckle_link"
+    transform: 
+      translation: 
+        x: 0.06142
+        y: -0.0127
+        z: 0.0
+      rotation: 
+        x: 0.0
+        y: 0.0
+        z: 0.0026664553614608104
+        w: 0.9999964450015837
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 107
+        nsecs: 320000000
+      frame_id: "gripper_base_link"
+    child_frame_id: "gripper_finger2_knuckle_link"
+    transform: 
+      translation: 
+        x: 0.05490451627
+        y: -0.03060114443
+        z: 0.0
+      rotation: 
+        x: 0.0
+        y: 0.0
+        z: 0.0026664553614608104
+        w: 0.9999964450015837
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 107
+        nsecs: 320000000
+      frame_id: "shoulder_link"
+    child_frame_id: "upper_arm_link"
+    transform: 
+      translation: 
+        x: 0.0
+        y: 0.13585
+        z: 0.0
+      rotation: 
+        x: 0.0
+        y: -0.5050222740408146
+        z: 0.0
+        w: 0.863106310209029
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 107
+        nsecs: 320000000
+      frame_id: "base_link"
+    child_frame_id: "shoulder_link"
+    transform: 
+      translation: 
+        x: 0.0
+        y: 0.0
+        z: 0.089159
+      rotation: 
+        x: 0.0
+        y: 0.0
+        z: 0.27158956892047753
+        w: 0.9624131680591186
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 107
+        nsecs: 320000000
+      frame_id: "forearm_link"
+    child_frame_id: "wrist_1_link"
+    transform: 
+      translation: 
+        x: 0.0
+        y: 0.0
+        z: 0.39225
+      rotation: 
+        x: 0.0
+        y: 0.9140086515611561
+        z: 0.0
+        w: 0.40569469416219545
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 107
+        nsecs: 320000000
+      frame_id: "wrist_1_link"
+    child_frame_id: "wrist_2_link"
+    transform: 
+      translation: 
+        x: 0.0
+        y: 0.093
+        z: 0.0
+      rotation: 
+        x: 0.0
+        y: 0.0
+        z: 0.7070887494953868
+        w: 0.7071248124178999
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 107
+        nsecs: 320000000
+      frame_id: "wrist_2_link"
+    child_frame_id: "wrist_3_link"
+    transform: 
+      translation: 
+        x: 0.0
+        y: 0.0
+        z: 0.09465
+      rotation: 
+        x: 0.0
+        y: 1.73356315183092e-05
+        z: 0.0
+        w: 0.999999999849738
+---
+transforms: 
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 107
+        nsecs: 340000000
+      frame_id: "upper_arm_link"
+    child_frame_id: "forearm_link"
+    transform: 
+      translation: 
+        x: 0.0
+        y: -0.1197
+        z: 0.425
+      rotation: 
+        x: 0.0
+        y: 0.8066461568138406
+        z: 0.0
+        w: 0.591034667086002
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 107
+        nsecs: 340000000
+      frame_id: "gripper_finger1_inner_knuckle_link"
+    child_frame_id: "gripper_finger1_finger_tip_link"
+    transform: 
+      translation: 
+        x: 0.04303959807
+        y: -0.03759940821
+        z: 0.0
+      rotation: 
+        x: 0.0
+        y: 0.0
+        z: -0.0026664553947904754
+        w: 0.9999964450014949
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 107
+        nsecs: 340000000
+      frame_id: "gripper_base_link"
+    child_frame_id: "gripper_finger1_inner_knuckle_link"
+    transform: 
+      translation: 
+        x: 0.06142
+        y: 0.0127
+        z: 0.0
+      rotation: 
+        x: 0.9999964450014948
+        y: -0.0026664553947904754
+        z: 1.6327330321496738e-19
+        w: 6.123212227649065e-17
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 107
+        nsecs: 340000000
+      frame_id: "gripper_base_link"
+    child_frame_id: "gripper_finger1_knuckle_link"
+    transform: 
+      translation: 
+        x: 0.05490451627
+        y: 0.03060114443
+        z: 0.0
+      rotation: 
+        x: 0.9999964450014948
+        y: -0.0026664553947904754
+        z: 1.6327330321496738e-19
+        w: 6.123212227649065e-17
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 107
+        nsecs: 340000000
+      frame_id: "gripper_finger2_inner_knuckle_link"
+    child_frame_id: "gripper_finger2_finger_tip_link"
+    transform: 
+      translation: 
+        x: 0.04303959807
+        y: -0.03759940821
+        z: 0.0
+      rotation: 
+        x: 0.0
+        y: 0.0
+        z: -0.0026664553947904754
+        w: 0.9999964450014949
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 107
+        nsecs: 340000000
+      frame_id: "gripper_base_link"
+    child_frame_id: "gripper_finger2_inner_knuckle_link"
+    transform: 
+      translation: 
+        x: 0.06142
+        y: -0.0127
+        z: 0.0
+      rotation: 
+        x: 0.0
+        y: 0.0
+        z: 0.0026664553947904754
+        w: 0.9999964450014949
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 107
+        nsecs: 340000000
+      frame_id: "gripper_base_link"
+    child_frame_id: "gripper_finger2_knuckle_link"
+    transform: 
+      translation: 
+        x: 0.05490451627
+        y: -0.03060114443
+        z: 0.0
+      rotation: 
+        x: 0.0
+        y: 0.0
+        z: 0.0026664553947904754
+        w: 0.9999964450014949
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 107
+        nsecs: 340000000
+      frame_id: "shoulder_link"
+    child_frame_id: "upper_arm_link"
+    transform: 
+      translation: 
+        x: 0.0
+        y: 0.13585
+        z: 0.0
+      rotation: 
+        x: 0.0
+        y: -0.5060485134172688
+        z: 0.0
+        w: 0.8625050156771104
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 107
+        nsecs: 340000000
+      frame_id: "base_link"
+    child_frame_id: "shoulder_link"
+    transform: 
+      translation: 
+        x: 0.0
+        y: 0.0
+        z: 0.089159
+      rotation: 
+        x: 0.0
+        y: 0.0
+        z: 0.2738928511391345
+        w: 0.9617602123683823
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 107
+        nsecs: 340000000
+      frame_id: "forearm_link"
+    child_frame_id: "wrist_1_link"
+    transform: 
+      translation: 
+        x: 0.0
+        y: 0.0
+        z: 0.39225
+      rotation: 
+        x: 0.0
+        y: 0.9153021905300426
+        z: 0.0
+        w: 0.40276779912364596
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 107
+        nsecs: 340000000
+      frame_id: "wrist_1_link"
+    child_frame_id: "wrist_2_link"
+    transform: 
+      translation: 
+        x: 0.0
+        y: 0.093
+        z: 0.0
+      rotation: 
+        x: 0.0
+        y: 0.0
+        z: 0.7070887323316183
+        w: 0.7071248295807927
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 107
+        nsecs: 340000000
+      frame_id: "wrist_2_link"
+    child_frame_id: "wrist_3_link"
+    transform: 
+      translation: 
+        x: 0.0
+        y: 0.0
+        z: 0.09465
+      rotation: 
+        x: 0.0
+        y: 1.72226430579604e-05
+        z: 0.0
+        w: 0.9999999998516902
+---
+transforms: 
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 107
+        nsecs: 355000000
+      frame_id: "odom"
+    child_frame_id: "ebot_base"
+    transform: 
+      translation: 
+        x: 0.018894327173205588
+        y: -0.0031855061252417
+        z: 0.22000058738878583
+      rotation: 
+        x: 1.0767878383908963e-07
+        y: -9.42292909884898e-07
+        z: -0.0013860403088804252
+        w: 0.9999990394452201
+---
+transforms: 
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 107
+        nsecs: 360000000
+      frame_id: "upper_arm_link"
+    child_frame_id: "forearm_link"
+    transform: 
+      translation: 
+        x: 0.0
+        y: -0.1197
+        z: 0.425
+      rotation: 
+        x: 0.0
+        y: 0.8054222380107994
+        z: 0.0
+        w: 0.5927014581707011
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 107
+        nsecs: 360000000
+      frame_id: "gripper_finger1_inner_knuckle_link"
+    child_frame_id: "gripper_finger1_finger_tip_link"
+    transform: 
+      translation: 
+        x: 0.04303959807
+        y: -0.03759940821
+        z: 0.0
+      rotation: 
+        x: 0.0
+        y: 0.0
+        z: -0.002666455433398122
+        w: 0.9999964450013918
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 107
+        nsecs: 360000000
+      frame_id: "gripper_base_link"
+    child_frame_id: "gripper_finger1_inner_knuckle_link"
+    transform: 
+      translation: 
+        x: 0.06142
+        y: 0.0127
+        z: 0.0
+      rotation: 
+        x: 0.9999964450013918
+        y: -0.002666455433398122
+        z: 1.6327330557900394e-19
+        w: 6.123212227648433e-17
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 107
+        nsecs: 360000000
+      frame_id: "gripper_base_link"
+    child_frame_id: "gripper_finger1_knuckle_link"
+    transform: 
+      translation: 
+        x: 0.05490451627
+        y: 0.03060114443
+        z: 0.0
+      rotation: 
+        x: 0.9999964450013918
+        y: -0.002666455433398122
+        z: 1.6327330557900394e-19
+        w: 6.123212227648433e-17
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 107
+        nsecs: 360000000
+      frame_id: "gripper_finger2_inner_knuckle_link"
+    child_frame_id: "gripper_finger2_finger_tip_link"
+    transform: 
+      translation: 
+        x: 0.04303959807
+        y: -0.03759940821
+        z: 0.0
+      rotation: 
+        x: 0.0
+        y: 0.0
+        z: -0.002666455433398122
+        w: 0.9999964450013918
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 107
+        nsecs: 360000000
+      frame_id: "gripper_base_link"
+    child_frame_id: "gripper_finger2_inner_knuckle_link"
+    transform: 
+      translation: 
+        x: 0.06142
+        y: -0.0127
+        z: 0.0
+      rotation: 
+        x: 0.0
+        y: 0.0
+        z: 0.002666455433398122
+        w: 0.9999964450013918
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 107
+        nsecs: 360000000
+      frame_id: "gripper_base_link"
+    child_frame_id: "gripper_finger2_knuckle_link"
+    transform: 
+      translation: 
+        x: 0.05490451627
+        y: -0.03060114443
+        z: 0.0
+      rotation: 
+        x: 0.0
+        y: 0.0
+        z: 0.002666455433398122
+        w: 0.9999964450013918
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 107
+        nsecs: 360000000
+      frame_id: "shoulder_link"
+    child_frame_id: "upper_arm_link"
+    transform: 
+      translation: 
+        x: 0.0
+        y: 0.13585
+        z: 0.0
+      rotation: 
+        x: 0.0
+        y: -0.5070740369795286
+        z: 0.0
+        w: 0.8619025008788892
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 107
+        nsecs: 360000000
+      frame_id: "base_link"
+    child_frame_id: "shoulder_link"
+    transform: 
+      translation: 
+        x: 0.0
+        y: 0.0
+        z: 0.089159
+      rotation: 
+        x: 0.0
+        y: 0.0
+        z: 0.27619456354532373
+        w: 0.9611017443892235
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 107
+        nsecs: 360000000
+      frame_id: "forearm_link"
+    child_frame_id: "wrist_1_link"
+    transform: 
+      translation: 
+        x: 0.0
+        y: 0.0
+        z: 0.39225
+      rotation: 
+        x: 0.0
+        y: 0.916586356836719
+        z: 0.0
+        w: 0.39983677977493626
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 107
+        nsecs: 360000000
+      frame_id: "wrist_1_link"
+    child_frame_id: "wrist_2_link"
+    transform: 
+      translation: 
+        x: 0.0
+        y: 0.093
+        z: 0.0
+      rotation: 
+        x: 0.0
+        y: 0.0
+        z: 0.7070887151553222
+        w: 0.7071248467562116
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 107
+        nsecs: 360000000
+      frame_id: "wrist_2_link"
+    child_frame_id: "wrist_3_link"
+    transform: 
+      translation: 
+        x: 0.0
+        y: 0.0
+        z: 0.09465
+      rotation: 
+        x: 0.0
+        y: 1.710965148809873e-05
+        z: 0.0
+        w: 0.9999999998536298
+---
+transforms: 
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 107
+        nsecs: 380000000
+      frame_id: "upper_arm_link"
+    child_frame_id: "forearm_link"
+    transform: 
+      translation: 
+        x: 0.0
+        y: -0.1197
+        z: 0.425
+      rotation: 
+        x: 0.0
+        y: 0.8041948750901046
+        z: 0.0
+        w: 0.594365714757178
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 107
+        nsecs: 380000000
+      frame_id: "gripper_finger1_inner_knuckle_link"
+    child_frame_id: "gripper_finger1_finger_tip_link"
+    transform: 
+      translation: 
+        x: 0.04303959807
+        y: -0.03759940821
+        z: 0.0
+      rotation: 
+        x: 0.0
+        y: 0.0
+        z: -0.002666455477310839
+        w: 0.9999964450012748
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 107
+        nsecs: 380000000
+      frame_id: "gripper_base_link"
+    child_frame_id: "gripper_finger1_inner_knuckle_link"
+    transform: 
+      translation: 
+        x: 0.06142
+        y: 0.0127
+        z: 0.0
+      rotation: 
+        x: 0.9999964450012747
+        y: -0.002666455477310839
+        z: 1.6327330826788235e-19
+        w: 6.123212227647717e-17
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 107
+        nsecs: 380000000
+      frame_id: "gripper_base_link"
+    child_frame_id: "gripper_finger1_knuckle_link"
+    transform: 
+      translation: 
+        x: 0.05490451627
+        y: 0.03060114443
+        z: 0.0
+      rotation: 
+        x: 0.9999964450012747
+        y: -0.002666455477310839
+        z: 1.6327330826788235e-19
+        w: 6.123212227647717e-17
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 107
+        nsecs: 380000000
+      frame_id: "gripper_finger2_inner_knuckle_link"
+    child_frame_id: "gripper_finger2_finger_tip_link"
+    transform: 
+      translation: 
+        x: 0.04303959807
+        y: -0.03759940821
+        z: 0.0
+      rotation: 
+        x: 0.0
+        y: 0.0
+        z: -0.002666455477310839
+        w: 0.9999964450012748
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 107
+        nsecs: 380000000
+      frame_id: "gripper_base_link"
+    child_frame_id: "gripper_finger2_inner_knuckle_link"
+    transform: 
+      translation: 
+        x: 0.06142
+        y: -0.0127
+        z: 0.0
+      rotation: 
+        x: 0.0
+        y: 0.0
+        z: 0.002666455477310839
+        w: 0.9999964450012748
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 107
+        nsecs: 380000000
+      frame_id: "gripper_base_link"
+    child_frame_id: "gripper_finger2_knuckle_link"
+    transform: 
+      translation: 
+        x: 0.05490451627
+        y: -0.03060114443
+        z: 0.0
+      rotation: 
+        x: 0.0
+        y: 0.0
+        z: 0.002666455477310839
+        w: 0.9999964450012748
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 107
+        nsecs: 380000000
+      frame_id: "shoulder_link"
+    child_frame_id: "upper_arm_link"
+    transform: 
+      translation: 
+        x: 0.0
+        y: 0.13585
+        z: 0.0
+      rotation: 
+        x: 0.0
+        y: -0.5080988432752671
+        z: 0.0
+        w: 0.8612987666671394
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 107
+        nsecs: 380000000
+      frame_id: "base_link"
+    child_frame_id: "shoulder_link"
+    transform: 
+      translation: 
+        x: 0.0
+        y: 0.0
+        z: 0.089159
+      rotation: 
+        x: 0.0
+        y: 0.0
+        z: 0.2784946929469393
+        w: 0.9604377678956562
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 107
+        nsecs: 380000000
+      frame_id: "forearm_link"
+    child_frame_id: "wrist_1_link"
+    transform: 
+      translation: 
+        x: 0.0
+        y: 0.0
+        z: 0.39225
+      rotation: 
+        x: 0.0
+        y: 0.9178611373316116
+        z: 0.0
+        w: 0.3969016661294338
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 107
+        nsecs: 380000000
+      frame_id: "wrist_1_link"
+    child_frame_id: "wrist_2_link"
+    transform: 
+      translation: 
+        x: 0.0
+        y: 0.093
+        z: 0.0
+      rotation: 
+        x: 0.0
+        y: 0.0
+        z: 0.7070886979664633
+        w: 0.7071248639441917
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 107
+        nsecs: 380000000
+      frame_id: "wrist_2_link"
+    child_frame_id: "wrist_3_link"
+    transform: 
+      translation: 
+        x: 0.0
+        y: 0.0
+        z: 0.09465
+      rotation: 
+        x: 0.0
+        y: 1.699665673766992e-05
+        z: 0.0
+        w: 0.9999999998555567
+---
+transforms: 
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 107
+        nsecs: 400000000
+      frame_id: "ebot_base"
+    child_frame_id: "FWL"
+    transform: 
+      translation: 
+        x: 0.199948480594093
+        y: 0.192163491981716
+        z: 0.0450000000000047
+      rotation: 
+        x: 0.0
+        y: 0.0
+        z: 0.0033985275945284635
+        w: 0.9999942249884194
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 107
+        nsecs: 400000000
+      frame_id: "ebot_base"
+    child_frame_id: "FWR"
+    transform: 
+      translation: 
+        x: 0.202539503068943
+        y: -0.189027702306049
+        z: 0.0449999999999943
+      rotation: 
+        x: 0.8980148022068737
+        y: 0.0030519457106136147
+        z: -0.43995211674401435
+        w: 0.0014951980438090466
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 107
+        nsecs: 400000000
+      frame_id: "ebot_base"
+    child_frame_id: "RWL"
+    transform: 
+      translation: 
+        x: -0.200042279414009
+        y: 0.189444685607321
+        z: 0.0449999999999969
+      rotation: 
+        x: 0.0
+        y: 0.0
+        z: 0.0033985275945284635
+        w: 0.9999942249884194
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 107
+        nsecs: 400000000
+      frame_id: "ebot_base"
+    child_frame_id: "RWR"
+    transform: 
+      translation: 
+        x: -0.197451256939211
+        y: -0.191746508680447
+        z: 0.044999999999993
+      rotation: 
+        x: 0.9631073245699101
+        y: 0.003273165721612107
+        z: -0.26909613778346797
+        w: 0.0009145359312919845
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 107
+        nsecs: 400000000
+      frame_id: "upper_arm_link"
+    child_frame_id: "forearm_link"
+    transform: 
+      translation: 
+        x: 0.0
+        y: -0.1197
+        z: 0.425
+      rotation: 
+        x: 0.0
+        y: 0.8041948750901046
+        z: 0.0
+        w: 0.594365714757178
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 107
+        nsecs: 400000000
+      frame_id: "gripper_finger1_inner_knuckle_link"
+    child_frame_id: "gripper_finger1_finger_tip_link"
+    transform: 
+      translation: 
+        x: 0.04303959807
+        y: -0.03759940821
+        z: 0.0
+      rotation: 
+        x: 0.0
+        y: 0.0
+        z: -0.002666455477310839
+        w: 0.9999964450012748
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 107
+        nsecs: 400000000
+      frame_id: "gripper_base_link"
+    child_frame_id: "gripper_finger1_inner_knuckle_link"
+    transform: 
+      translation: 
+        x: 0.06142
+        y: 0.0127
+        z: 0.0
+      rotation: 
+        x: 0.9999964450012747
+        y: -0.002666455477310839
+        z: 1.6327330826788235e-19
+        w: 6.123212227647717e-17
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 107
+        nsecs: 400000000
+      frame_id: "gripper_base_link"
+    child_frame_id: "gripper_finger1_knuckle_link"
+    transform: 
+      translation: 
+        x: 0.05490451627
+        y: 0.03060114443
+        z: 0.0
+      rotation: 
+        x: 0.9999964450012747
+        y: -0.002666455477310839
+        z: 1.6327330826788235e-19
+        w: 6.123212227647717e-17
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 107
+        nsecs: 400000000
+      frame_id: "gripper_finger2_inner_knuckle_link"
+    child_frame_id: "gripper_finger2_finger_tip_link"
+    transform: 
+      translation: 
+        x: 0.04303959807
+        y: -0.03759940821
+        z: 0.0
+      rotation: 
+        x: 0.0
+        y: 0.0
+        z: -0.002666455477310839
+        w: 0.9999964450012748
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 107
+        nsecs: 400000000
+      frame_id: "gripper_base_link"
+    child_frame_id: "gripper_finger2_inner_knuckle_link"
+    transform: 
+      translation: 
+        x: 0.06142
+        y: -0.0127
+        z: 0.0
+      rotation: 
+        x: 0.0
+        y: 0.0
+        z: 0.002666455477310839
+        w: 0.9999964450012748
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 107
+        nsecs: 400000000
+      frame_id: "gripper_base_link"
+    child_frame_id: "gripper_finger2_knuckle_link"
+    transform: 
+      translation: 
+        x: 0.05490451627
+        y: -0.03060114443
+        z: 0.0
+      rotation: 
+        x: 0.0
+        y: 0.0
+        z: 0.002666455477310839
+        w: 0.9999964450012748
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 107
+        nsecs: 400000000
+      frame_id: "shoulder_link"
+    child_frame_id: "upper_arm_link"
+    transform: 
+      translation: 
+        x: 0.0
+        y: 0.13585
+        z: 0.0
+      rotation: 
+        x: 0.0
+        y: -0.5080988432752671
+        z: 0.0
+        w: 0.8612987666671394
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 107
+        nsecs: 400000000
+      frame_id: "base_link"
+    child_frame_id: "shoulder_link"
+    transform: 
+      translation: 
+        x: 0.0
+        y: 0.0
+        z: 0.089159
+      rotation: 
+        x: 0.0
+        y: 0.0
+        z: 0.2784946929469393
+        w: 0.9604377678956562
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 107
+        nsecs: 400000000
+      frame_id: "forearm_link"
+    child_frame_id: "wrist_1_link"
+    transform: 
+      translation: 
+        x: 0.0
+        y: 0.0
+        z: 0.39225
+      rotation: 
+        x: 0.0
+        y: 0.9178611373316116
+        z: 0.0
+        w: 0.3969016661294338
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 107
+        nsecs: 400000000
+      frame_id: "wrist_1_link"
+    child_frame_id: "wrist_2_link"
+    transform: 
+      translation: 
+        x: 0.0
+        y: 0.093
+        z: 0.0
+      rotation: 
+        x: 0.0
+        y: 0.0
+        z: 0.7070886979664633
+        w: 0.7071248639441917
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 107
+        nsecs: 400000000
+      frame_id: "wrist_2_link"
+    child_frame_id: "wrist_3_link"
+    transform: 
+      translation: 
+        x: 0.0
+        y: 0.0
+        z: 0.09465
+      rotation: 
+        x: 0.0
+        y: 1.699665673766992e-05
+        z: 0.0
+        w: 0.9999999998555567
+---
+transforms: 
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 107
+        nsecs: 399000000
+      frame_id: "odom"
+    child_frame_id: "ebot_base"
+    transform: 
+      translation: 
+        x: 0.0188966029949525
+        y: -0.0031854990833618895
+        z: 0.22000058550065962
+      rotation: 
+        x: 1.290665270237124e-07
+        y: -9.591497236053074e-07
+        z: -0.0013860385501840114
+        w: 0.999999039447639
+---
+transforms: 
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 107
+        nsecs: 420000000
+      frame_id: "upper_arm_link"
+    child_frame_id: "forearm_link"
+    transform: 
+      translation: 
+        x: 0.0
+        y: -0.1197
+        z: 0.425
+      rotation: 
+        x: 0.0
+        y: 0.8017298379040655
+        z: 0.0
+        w: 0.5976865959801348
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 107
+        nsecs: 420000000
+      frame_id: "gripper_finger1_inner_knuckle_link"
+    child_frame_id: "gripper_finger1_finger_tip_link"
+    transform: 
+      translation: 
+        x: 0.04303959807
+        y: -0.03759940821
+        z: 0.0
+      rotation: 
+        x: 0.0
+        y: 0.0
+        z: -0.0026664555812717537
+        w: 0.9999964450009975
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 107
+        nsecs: 420000000
+      frame_id: "gripper_base_link"
+    child_frame_id: "gripper_finger1_inner_knuckle_link"
+    transform: 
+      translation: 
+        x: 0.06142
+        y: 0.0127
+        z: 0.0
+      rotation: 
+        x: 0.9999964450009975
+        y: -0.0026664555812717537
+        z: 1.632733146336524e-19
+        w: 6.123212227646019e-17
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 107
+        nsecs: 420000000
+      frame_id: "gripper_base_link"
+    child_frame_id: "gripper_finger1_knuckle_link"
+    transform: 
+      translation: 
+        x: 0.05490451627
+        y: 0.03060114443
+        z: 0.0
+      rotation: 
+        x: 0.9999964450009975
+        y: -0.0026664555812717537
+        z: 1.632733146336524e-19
+        w: 6.123212227646019e-17
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 107
+        nsecs: 420000000
+      frame_id: "gripper_finger2_inner_knuckle_link"
+    child_frame_id: "gripper_finger2_finger_tip_link"
+    transform: 
+      translation: 
+        x: 0.04303959807
+        y: -0.03759940821
+        z: 0.0
+      rotation: 
+        x: 0.0
+        y: 0.0
+        z: -0.0026664555812717537
+        w: 0.9999964450009975
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 107
+        nsecs: 420000000
+      frame_id: "gripper_base_link"
+    child_frame_id: "gripper_finger2_inner_knuckle_link"
+    transform: 
+      translation: 
+        x: 0.06142
+        y: -0.0127
+        z: 0.0
+      rotation: 
+        x: 0.0
+        y: 0.0
+        z: 0.0026664555812717537
+        w: 0.9999964450009975
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 107
+        nsecs: 420000000
+      frame_id: "gripper_base_link"
+    child_frame_id: "gripper_finger2_knuckle_link"
+    transform: 
+      translation: 
+        x: 0.05490451627
+        y: -0.03060114443
+        z: 0.0
+      rotation: 
+        x: 0.0
+        y: 0.0
+        z: 0.0026664555812717537
+        w: 0.9999964450009975
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 107
+        nsecs: 420000000
+      frame_id: "shoulder_link"
+    child_frame_id: "upper_arm_link"
+    transform: 
+      translation: 
+        x: 0.0
+        y: 0.13585
+        z: 0.0
+      rotation: 
+        x: 0.0
+        y: -0.5101462982621171
+        z: 0.0
+        w: 0.8600876434233077
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 107
+        nsecs: 420000000
+      frame_id: "base_link"
+    child_frame_id: "shoulder_link"
+    transform: 
+      translation: 
+        x: 0.0
+        y: 0.0
+        z: 0.089159
+      rotation: 
+        x: 0.0
+        y: 0.0
+        z: 0.2830901500141186
+        w: 0.9590933046189949
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 107
+        nsecs: 420000000
+      frame_id: "forearm_link"
+    child_frame_id: "wrist_1_link"
+    transform: 
+      translation: 
+        x: 0.0
+        y: 0.0
+        z: 0.39225
+      rotation: 
+        x: 0.0
+        y: 0.9203824887686631
+        z: 0.0
+        w: 0.39101927621026783
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 107
+        nsecs: 420000000
+      frame_id: "wrist_1_link"
+    child_frame_id: "wrist_2_link"
+    transform: 
+      translation: 
+        x: 0.0
+        y: 0.093
+        z: 0.0
+      rotation: 
+        x: 0.0
+        y: 0.0
+        z: 0.707088663550798
+        w: 0.7071248983580951
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 107
+        nsecs: 420000000
+      frame_id: "wrist_2_link"
+    child_frame_id: "wrist_3_link"
+    transform: 
+      translation: 
+        x: 0.0
+        y: 0.0
+        z: 0.09465
+      rotation: 
+        x: 0.0
+        y: 1.67706575094816e-05
+        z: 0.0
+        w: 0.9999999998593725
+---
+transforms: 
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 107
+        nsecs: 440000000
+      frame_id: "upper_arm_link"
+    child_frame_id: "forearm_link"
+    transform: 
+      translation: 
+        x: 0.0
+        y: -0.1197
+        z: 0.425
+      rotation: 
+        x: 0.0
+        y: 0.8004921741795994
+        z: 0.0
+        w: 0.5993432064161719
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 107
+        nsecs: 440000000
+      frame_id: "gripper_finger1_inner_knuckle_link"
+    child_frame_id: "gripper_finger1_finger_tip_link"
+    transform: 
+      translation: 
+        x: 0.04303959807
+        y: -0.03759940821
+        z: 0.0
+      rotation: 
+        x: 0.0
+        y: 0.0
+        z: -0.0026664556414038834
+        w: 0.9999964450008372
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 107
+        nsecs: 440000000
+      frame_id: "gripper_base_link"
+    child_frame_id: "gripper_finger1_inner_knuckle_link"
+    transform: 
+      translation: 
+        x: 0.06142
+        y: 0.0127
+        z: 0.0
+      rotation: 
+        x: 0.9999964450008372
+        y: -0.0026664556414038834
+        z: 1.632733183156834e-19
+        w: 6.123212227645039e-17
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 107
+        nsecs: 440000000
+      frame_id: "gripper_base_link"
+    child_frame_id: "gripper_finger1_knuckle_link"
+    transform: 
+      translation: 
+        x: 0.05490451627
+        y: 0.03060114443
+        z: 0.0
+      rotation: 
+        x: 0.9999964450008372
+        y: -0.0026664556414038834
+        z: 1.632733183156834e-19
+        w: 6.123212227645039e-17
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 107
+        nsecs: 440000000
+      frame_id: "gripper_finger2_inner_knuckle_link"
+    child_frame_id: "gripper_finger2_finger_tip_link"
+    transform: 
+      translation: 
+        x: 0.04303959807
+        y: -0.03759940821
+        z: 0.0
+      rotation: 
+        x: 0.0
+        y: 0.0
+        z: -0.0026664556414038834
+        w: 0.9999964450008372
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 107
+        nsecs: 440000000
+      frame_id: "gripper_base_link"
+    child_frame_id: "gripper_finger2_inner_knuckle_link"
+    transform: 
+      translation: 
+        x: 0.06142
+        y: -0.0127
+        z: 0.0
+      rotation: 
+        x: 0.0
+        y: 0.0
+        z: 0.0026664556414038834
+        w: 0.9999964450008372
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 107
+        nsecs: 440000000
+      frame_id: "gripper_base_link"
+    child_frame_id: "gripper_finger2_knuckle_link"
+    transform: 
+      translation: 
+        x: 0.05490451627
+        y: -0.03060114443
+        z: 0.0
+      rotation: 
+        x: 0.0
+        y: 0.0
+        z: 0.0026664556414038834
+        w: 0.9999964450008372
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 107
+        nsecs: 440000000
+      frame_id: "shoulder_link"
+    child_frame_id: "upper_arm_link"
+    transform: 
+      translation: 
+        x: 0.0
+        y: 0.13585
+        z: 0.0
+      rotation: 
+        x: 0.0
+        y: -0.5111689440532714
+        z: 0.0
+        w: 0.8594802561056673
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 107
+        nsecs: 440000000
+      frame_id: "base_link"
+    child_frame_id: "shoulder_link"
+    transform: 
+      translation: 
+        x: 0.0
+        y: 0.0
+        z: 0.089159
+      rotation: 
+        x: 0.0
+        y: 0.0
+        z: 0.28538545134148535
+        w: 0.9584128255415914
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 107
+        nsecs: 440000000
+      frame_id: "forearm_link"
+    child_frame_id: "wrist_1_link"
+    transform: 
+      translation: 
+        x: 0.0
+        y: 0.0
+        z: 0.39225
+      rotation: 
+        x: 0.0
+        y: 0.9216290338928153
+        z: 0.0
+        w: 0.3880720601715563
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 107
+        nsecs: 440000000
+      frame_id: "wrist_1_link"
+    child_frame_id: "wrist_2_link"
+    transform: 
+      translation: 
+        x: 0.0
+        y: 0.093
+        z: 0.0
+      rotation: 
+        x: 0.0
+        y: 0.0
+        z: 0.7070886463238936
+        w: 0.7071249155841164
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 107
+        nsecs: 440000000
+      frame_id: "wrist_2_link"
+    child_frame_id: "wrist_3_link"
+    transform: 
+      translation: 
+        x: 0.0
+        y: 0.0
+        z: 0.09465
+      rotation: 
+        x: 0.0
+        y: 1.6657652919811614e-05
+        z: 0.0
+        w: 0.9999999998612612
+---
+transforms: 
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 107
+        nsecs: 455000000
+      frame_id: "odom"
+    child_frame_id: "ebot_base"
+    transform: 
+      translation: 
+        x: 0.018898859165524806
+        y: -0.0031854923201433912
+        z: 0.2200005836174951
+      rotation: 
+        x: 1.5063718283953573e-07
+        y: -9.756155466992046e-07
+        z: -0.0013860365402770473
+        w: 0.9999990394504059
+---
+transforms: 
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 107
+        nsecs: 460000000
+      frame_id: "upper_arm_link"
+    child_frame_id: "forearm_link"
+    transform: 
+      translation: 
+        x: 0.0
+        y: -0.1197
+        z: 0.425
+      rotation: 
+        x: 0.0
+        y: 0.7992510874191862
+        z: 0.0
+        w: 0.6009972539531677
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 107
+        nsecs: 460000000
+      frame_id: "gripper_finger1_inner_knuckle_link"
+    child_frame_id: "gripper_finger1_finger_tip_link"
+    transform: 
+      translation: 
+        x: 0.04303959807
+        y: -0.03759940821
+        z: 0.0
+      rotation: 
+        x: 0.0
+        y: 0.0
+        z: -0.002666455706936119
+        w: 0.9999964450006624
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 107
+        nsecs: 460000000
+      frame_id: "gripper_base_link"
+    child_frame_id: "gripper_finger1_inner_knuckle_link"
+    transform: 
+      translation: 
+        x: 0.06142
+        y: 0.0127
+        z: 0.0
+      rotation: 
+        x: 0.9999964450006624
+        y: -0.002666455706936119
+        z: 1.6327332232837554e-19
+        w: 6.123212227643969e-17
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 107
+        nsecs: 460000000
+      frame_id: "gripper_base_link"
+    child_frame_id: "gripper_finger1_knuckle_link"
+    transform: 
+      translation: 
+        x: 0.05490451627
+        y: 0.03060114443
+        z: 0.0
+      rotation: 
+        x: 0.9999964450006624
+        y: -0.002666455706936119
+        z: 1.6327332232837554e-19
+        w: 6.123212227643969e-17
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 107
+        nsecs: 460000000
+      frame_id: "gripper_finger2_inner_knuckle_link"
+    child_frame_id: "gripper_finger2_finger_tip_link"
+    transform: 
+      translation: 
+        x: 0.04303959807
+        y: -0.03759940821
+        z: 0.0
+      rotation: 
+        x: 0.0
+        y: 0.0
+        z: -0.002666455706936119
+        w: 0.9999964450006624
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 107
+        nsecs: 460000000
+      frame_id: "gripper_base_link"
+    child_frame_id: "gripper_finger2_inner_knuckle_link"
+    transform: 
+      translation: 
+        x: 0.06142
+        y: -0.0127
+        z: 0.0
+      rotation: 
+        x: 0.0
+        y: 0.0
+        z: 0.002666455706936119
+        w: 0.9999964450006624
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 107
+        nsecs: 460000000
+      frame_id: "gripper_base_link"
+    child_frame_id: "gripper_finger2_knuckle_link"
+    transform: 
+      translation: 
+        x: 0.05490451627
+        y: -0.03060114443
+        z: 0.0
+      rotation: 
+        x: 0.0
+        y: 0.0
+        z: 0.002666455706936119
+        w: 0.9999964450006624
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 107
+        nsecs: 460000000
+      frame_id: "shoulder_link"
+    child_frame_id: "upper_arm_link"
+    transform: 
+      translation: 
+        x: 0.0
+        y: 0.13585
+        z: 0.0
+      rotation: 
+        x: 0.0
+        y: -0.5121908667787765
+        z: 0.0
+        w: 0.858871652802912
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 107
+        nsecs: 460000000
+      frame_id: "base_link"
+    child_frame_id: "shoulder_link"
+    transform: 
+      translation: 
+        x: 0.0
+        y: 0.0
+        z: 0.089159
+      rotation: 
+        x: 0.0
+        y: 0.0
+        z: 0.28767911698742776
+        w: 0.9577268533612983
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 107
+        nsecs: 460000000
+      frame_id: "forearm_link"
+    child_frame_id: "wrist_1_link"
+    transform: 
+      translation: 
+        x: 0.0
+        y: 0.0
+        z: 0.39225
+      rotation: 
+        x: 0.0
+        y: 0.9228661415693363
+        z: 0.0
+        w: 0.38512087030557796
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 107
+        nsecs: 460000000
+      frame_id: "wrist_1_link"
+    child_frame_id: "wrist_2_link"
+    transform: 
+      translation: 
+        x: 0.0
+        y: 0.093
+        z: 0.0
+      rotation: 
+        x: 0.0
+        y: 0.0
+        z: 0.7070886290843146
+        w: 0.7071249328228107
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 107
+        nsecs: 460000000
+      frame_id: "wrist_2_link"
+    child_frame_id: "wrist_3_link"
+    transform: 
+      translation: 
+        x: 0.0
+        y: 0.0
+        z: 0.09465
+      rotation: 
+        x: 0.0
+        y: 1.6544644842264763e-05
+        z: 0.0
+        w: 0.9999999998631373
+---
